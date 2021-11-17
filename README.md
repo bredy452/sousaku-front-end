@@ -8,6 +8,10 @@
   creation; original work
 </p>
 
+## Made By
+
+[Antoinette Lee](https://www.linkedin.com/in/antoinettelee/), [Bredell Evans](https://www.linkedin.com/in/bredellevansjr/) & [Clay Gomes](https://www.linkedin.com/in/clay-gomes/)
+
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
