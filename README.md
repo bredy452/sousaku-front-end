@@ -12,6 +12,28 @@
 
 [Antoinette Lee](https://www.linkedin.com/in/antoinettelee/), [Bredell Evans](https://www.linkedin.com/in/bredellevansjr/) & [Clay Gomes](https://www.linkedin.com/in/clay-gomes/)
 
+## Prerequisites
+
+- npm 7 +
+
+## Installation
+
+1. Clone this repository.
+
+`git clone https://github.com/Nyette/sousaku-front-end.git`
+
+2. Navigate to the directory.
+
+`cd sousaku-front-end`
+
+3. Install dependencies.
+
+`npm install`
+
+4. Enable Git hooks, if they are not already enabled.
+
+`npx husky install`
+
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
