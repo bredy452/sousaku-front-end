@@ -32,7 +32,6 @@ export default class App extends Component {
           canvasHeight={this.state.canvasHeight}
           lazyRadius={this.state.lazyRadius}
           hideGridX={this.state.hideGridX}
-          hideGridY={this.state.hideGridY}
         />
       </>
     );
