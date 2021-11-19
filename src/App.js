@@ -1,17 +1,13 @@
 import "./App.css";
 import React, { Component } from "react";
-import CanvasDraw from "react-canvas-draw";
+import Home from "./Home";
+import Learn from "./Learn";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      brushRadius: 2,
-      canvasWidth: 400,
-      canvasHeight: 320,
-      lazyRadius: 0,
-      hideGridX: true,
-      hideGridY: true,
+      isLearning: false,
     };
   }
 
@@ -22,18 +18,20 @@ export default class App extends Component {
     }
   };
 
+  toggleLearning = () => {
+    this.setState({
+      isLearning: !this.state.isLearning,
+    });
+  };
+
   render() {
     return (
       <>
-        <CanvasDraw
-          className="canvas"
-          brushRadius={this.state.brushRadius}
-          canvasWidth={this.state.canvasWidth}
-          canvasHeight={this.state.canvasHeight}
-          lazyRadius={this.state.lazyRadius}
-          hideGridX={this.state.hideGridX}
-          hideGridY={this.state.hideGridY}
-        />
+        {this.state.isLearning ? (
+          <Learn toggleLearning={this.toggleLearning} />
+        ) : (
+          <Home toggleLearning={this.toggleLearning} />
+        )}
       </>
     );
   }
