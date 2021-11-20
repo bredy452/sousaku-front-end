@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CanvasDraw from "react-canvas-draw";
-import getCharacters from "./GetCharacters";
+import getCharacters from "../getCharacters";
 
 export default class Learn extends Component {
   constructor(props) {
@@ -50,17 +50,24 @@ export default class Learn extends Component {
             <button onClick={this.props.toggleLearning}>Back To Home</button>
           </div>
           <div class="container">
-            <CanvasDraw
-              className="canvas"
-              brushRadius={this.state.brushRadius}
-              canvasWidth={this.state.canvasWidth}
-              canvasHeight={this.state.canvasHeight}
-              lazyRadius={this.state.lazyRadius}
-              hideGridX={this.state.hideGridX}
-              hideGridY={this.state.hideGridY}
-            />
-
-            <img src={this.state.currentCharacter.animation} height="60" />
+            <div /*class="four columns"*/>
+              <CanvasDraw
+                className="canvas"
+                brushRadius={this.state.brushRadius}
+                canvasWidth={this.state.canvasWidth}
+                canvasHeight={this.state.canvasHeight}
+                lazyRadius={this.state.lazyRadius}
+                hideGridX={this.state.hideGridX}
+                hideGridY={this.state.hideGridY}
+              />
+            </div>
+            <div /*class="four columns animation"*/>
+              <img
+                src={this.state.currentCharacter.animation}
+                height="60"
+                alt={this.state.currentCharacter.romaji}
+              />
+            </div>
           </div>
           <br></br>
           <div>

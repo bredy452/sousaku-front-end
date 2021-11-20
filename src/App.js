@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
-import Home from "./Components/Home";
-import Learn from "./Components/Learn";
+import Home from "./components/Home";
+import Learn from "./components/Learn";
 
 export default class App extends Component {
   constructor(props) {
