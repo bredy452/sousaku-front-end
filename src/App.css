@@ -47,13 +47,13 @@
 
 .homeButton {
   text-align: center;
-  margin-left: 100px;
+  /*margin-left: 50px;*/
   /*position: relative*/
 }
 
 .previousNext {
   text-align: center;
-  margin-left: 100px;
+  /* margin-left: 50px;*/
 }
 
 @keyframes App-logo-spin {

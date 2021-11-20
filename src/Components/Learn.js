@@ -45,14 +45,14 @@ export default class Learn extends Component {
   render() {
     return (
       <>
-        <div /*className="App"*/>
-          <div class="homeButton">
+        <div className="App">
+          <div /*class="homeButton"*/>
             <button onClick={this.props.toggleLearning}>Back To Home</button>
           </div>
-          <div class="row">
-            <div class="four columns">Hello</div>
+          <div /*class="row"*/>
+            <div /*class="four columns"*/>Hello</div>
 
-            <div class="four columns">
+            <div /*class="four columns"*/>
               <CanvasDraw
                 className="canvas"
                 brushRadius={this.state.brushRadius}
@@ -63,12 +63,12 @@ export default class Learn extends Component {
                 hideGridY={this.state.hideGridY}
               />
             </div>
-            <div class="four columns animation">
+            <div /*class="four columns animation"*/>
               <img src={this.state.currentCharacter.animation} height="60" />
             </div>
           </div>
           <br></br>
-          <div class="previousNext">
+          <div /*class="previousNext u-full-width"*/>
             <button onClick={(e) => this.changeCharacterBackwards(e)}>
               Previous
             </button>
