@@ -46,38 +46,37 @@ export default class Learn extends Component {
     return (
       <>
         <div className="App">
-          <div /*class="homeButton"*/>
+          <div>
             <button onClick={this.props.toggleLearning}>Back To Home</button>
           </div>
-          <div /*class="row"*/>
-            <div /*class="four columns"*/>Hello</div>
+          <div class="container">
+            <CanvasDraw
+              className="canvas"
+              brushRadius={this.state.brushRadius}
+              canvasWidth={this.state.canvasWidth}
+              canvasHeight={this.state.canvasHeight}
+              lazyRadius={this.state.lazyRadius}
+              hideGridX={this.state.hideGridX}
+              hideGridY={this.state.hideGridY}
+            />
 
-            <div /*class="four columns"*/>
-              <CanvasDraw
-                className="canvas"
-                brushRadius={this.state.brushRadius}
-                canvasWidth={this.state.canvasWidth}
-                canvasHeight={this.state.canvasHeight}
-                lazyRadius={this.state.lazyRadius}
-                hideGridX={this.state.hideGridX}
-                hideGridY={this.state.hideGridY}
-              />
-            </div>
-            <div /*class="four columns animation"*/>
-              <img src={this.state.currentCharacter.animation} height="60" />
-            </div>
+            <img src={this.state.currentCharacter.animation} height="60" />
           </div>
           <br></br>
-          <div /*class="previousNext u-full-width"*/>
+          <div>
             <button onClick={(e) => this.changeCharacterBackwards(e)}>
               Previous
             </button>
+            {/*<button>
+              Tutorial
+            </button>*/}
             <button onClick={(e) => this.changeCharacterForward(e)}>
               Next
             </button>
           </div>
           {console.log(this.state.currentCharacter, this.state.nextCharacter)}
         </div>
+        <img src=".../public/images/table.png" />
       </>
     );
   }

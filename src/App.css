@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background-image: url(../public/table.png);*/
 }
 
 .App-logo {
@@ -29,20 +30,11 @@
 }
 
 .canvas {
-  margin: 0 auto;
+  margin-left: 150px;
+  margin-right: 50px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
-
-.animation {
-  text-align: center;
-  /*width: 200px;*/
-  object-fit: cover;
-  image-rendering: crisp-edges;
-  margin-top: 100px;
-  /*box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3);*/
 }
 
 .homeButton {
@@ -54,6 +46,13 @@
 .previousNext {
   text-align: center;
   /* margin-left: 50px;*/
+}
+
+.container {
+  display: flex;
+  width: 700px;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
