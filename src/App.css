@@ -11,14 +11,29 @@
 .table {
   background-image: url(./table.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 70% 100%;
+  background-position: center;
 }
 
 .ukiyo {
   background-image: url(./temporary-wood-engraving.png);
   background-repeat: no-repeat;
-  background-size: 92% 82%;
-  background-position: center;
+  background-size: 50% 75%;
+  background-position: bottom;
+}
+
+.paintArea {
+  background-image: url(./utility-side-table.png);
+  background-repeat: no-repeat;
+  background-size: 50% 30%;
+  background-position: top;
+}
+
+.sheets {
+  background-image: url(./temparary-papers-table-top.png);
+  background-repeat: no-repeat;
+  background-size: 65% 80%;
+  background-position: bottom;
 }
 
 .App-logo {
@@ -50,6 +65,7 @@
 .canvas {
   margin-left: 150px;
   margin-right: 50px;
+  margin-top: 90px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
   cursor: pointer;

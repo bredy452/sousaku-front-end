@@ -15,8 +15,8 @@ export default class Learn extends Component {
       },
       // Canvas
       brushRadius: 2,
-      canvasWidth: 400,
-      canvasHeight: 320,
+      canvasWidth: 200,
+      canvasHeight: 200,
       lazyRadius: 0,
       hideGridX: true,
       hideGridY: true,

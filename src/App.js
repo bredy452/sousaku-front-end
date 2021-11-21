@@ -29,11 +29,15 @@ export default class App extends Component {
       <div class="floor">
         <div class="table">
           <div class="ukiyo">
-            {this.state.isLearning ? (
-              <Learn toggleLearning={this.toggleLearning} />
-            ) : (
-              <Home toggleLearning={this.toggleLearning} />
-            )}
+            <div class="paintArea">
+              <div class="sheets">
+                {this.state.isLearning ? (
+                  <Learn toggleLearning={this.toggleLearning} />
+                ) : (
+                  <Home toggleLearning={this.toggleLearning} />
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
