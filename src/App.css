@@ -1,6 +1,24 @@
 .App {
   text-align: center;
-  /* background-image: url(../public/table.png);*/
+}
+
+.floor {
+  background-image: url(./Floor.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.table {
+  background-image: url(./table.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ukiyo {
+  background-image: url(./temporary-wood-engraving.png);
+  background-repeat: no-repeat;
+  background-size: 92% 82%;
+  background-position: center;
 }
 
 .App-logo {

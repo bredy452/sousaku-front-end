@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  /*background-color: blue;*/
+  /*background-image: url(./Floor.png);
+  background-repeat: no-repeat;
+  background-position: center;*/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -7,7 +11,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*.secondImage {
+  background-image: url(./table.png);
+  background-repeat: no-repeat;
+}*/
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.floor {
+  background-image: url(./Floor.png);
+}
+
+.table {
+  background-image: url(./table.png);
 }

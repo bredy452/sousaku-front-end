@@ -83,7 +83,6 @@ export default class Learn extends Component {
           </div>
           {console.log(this.state.currentCharacter, this.state.nextCharacter)}
         </div>
-        <img src=".../public/images/table.png" />
       </>
     );
   }

@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
-import Home from "./components/Home";
-import Learn from "./components/Learn";
+import Home from "./Components/Home";
+import Learn from "./Components/Learn";
 
 export default class App extends Component {
   constructor(props) {
@@ -26,13 +26,17 @@ export default class App extends Component {
 
   render() {
     return (
-      <>
-        {this.state.isLearning ? (
-          <Learn toggleLearning={this.toggleLearning} />
-        ) : (
-          <Home toggleLearning={this.toggleLearning} />
-        )}
-      </>
+      <div class="floor">
+        <div class="table">
+          <div class="ukiyo">
+            {this.state.isLearning ? (
+              <Learn toggleLearning={this.toggleLearning} />
+            ) : (
+              <Home toggleLearning={this.toggleLearning} />
+            )}
+          </div>
+        </div>
+      </div>
     );
   }
 }
