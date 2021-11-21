@@ -45,11 +45,12 @@ export default class Learn extends Component {
   render() {
     return (
       <>
+      {console.log(this.props.changeBrush)}
         <div className="App">
           <div>
             <button onClick={this.props.toggleLearning}>Back To Home</button>
           </div>
-          <div class="container">
+          <div className="container">
             <div /*class="four columns"*/>
               <CanvasDraw
                 className="canvas"
@@ -61,7 +62,7 @@ export default class Learn extends Component {
                 hideGridY={this.state.hideGridY}
               />
             </div>
-            <div class="animation">
+            <div className="animation">
               <img
                 src={this.state.currentCharacter.animation}
                 height="60"
