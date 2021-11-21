@@ -26,27 +26,79 @@ export default class App extends Component {
 
   render() {
     return (
-      <div class="floor">
-        <div class="fan">
-          <div class="table">
-            <div class="ukiyo">
-              <div class="paintArea">
-                <div class="sheets">
-                  <div class="sousaku">
-                    <div class="paintcolor">
-                      <div class="blackpaint">
-                        <div class="redpaint">
-                          <div class="temporaryredpaint">
-                            <div class="temporaryblackpaint">
-                              <div class="brush">
-                                <div class="splat">
-                                  <div class="circle1">
-                                    <div class="circle2">
-                                      <div class="circle3">
-                                        <div class="line1">
-                                          <div class="line2">
-                                            <div class="line3">
-                                              <div class="leaves">
+      <div class={this.state.isLearning ? "floor" : null}>
+        <div class={this.state.isLearning ? "fan" : null}>
+          <div class={this.state.isLearning ? "table" : null}>
+            <div class={this.state.isLearning ? "ukiyo" : null}>
+              <div class={this.state.isLearning ? "paintArea" : null}>
+                <div class={this.state.isLearning ? "sheets" : null}>
+                  <div class={this.state.isLearning ? "sousaku" : null}>
+                    <div class={this.state.isLearning ? "paintcolor" : null}>
+                      <div class={this.state.isLearning ? "blackpaint" : null}>
+                        <div class={this.state.isLearning ? "redpaint" : null}>
+                          <div
+                            class={
+                              this.state.isLearning ? "temporaryredpaint" : null
+                            }
+                          >
+                            <div
+                              class={
+                                this.state.isLearning
+                                  ? "temporaryblackpaint"
+                                  : null
+                              }
+                            >
+                              <div
+                                class={this.state.isLearning ? "brush" : null}
+                              >
+                                <div
+                                  class={this.state.isLearning ? "splat" : null}
+                                >
+                                  <div
+                                    class={
+                                      this.state.isLearning ? "circle1" : null
+                                    }
+                                  >
+                                    <div
+                                      class={
+                                        this.state.isLearning ? "circle2" : null
+                                      }
+                                    >
+                                      <div
+                                        class={
+                                          this.state.isLearning
+                                            ? "circle3"
+                                            : null
+                                        }
+                                      >
+                                        <div
+                                          class={
+                                            this.state.isLearning
+                                              ? "line1"
+                                              : null
+                                          }
+                                        >
+                                          <div
+                                            class={
+                                              this.state.isLearning
+                                                ? "line2"
+                                                : null
+                                            }
+                                          >
+                                            <div
+                                              class={
+                                                this.state.isLearning
+                                                  ? "line3"
+                                                  : null
+                                              }
+                                            >
+                                              <div
+                                                class={
+                                                  this.state.isLearning
+                                                    ? "leaves"
+                                                    : null
+                                                }
+                                              >
                                                 {this.state.isLearning ? (
                                                   <Learn
                                                     toggleLearning={
