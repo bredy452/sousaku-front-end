@@ -1,4 +1,8 @@
+import "./Learn.css";
 import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import CanvasDraw from "react-canvas-draw";
 import getCharacters from "../getCharacters";
 
@@ -8,11 +12,7 @@ export default class Learn extends Component {
     this.state = {
       // Characters
       characters: getCharacters(),
-      currentCharacter: {
-        romaji: "a",
-        id: 1,
-        animation: "https://yosida.com/images/kana/a.gif",
-      },
+      currentCharacter: {},
       // Canvas
       brushRadius: 2,
       canvasWidth: 200,
@@ -20,70 +20,79 @@ export default class Learn extends Component {
       lazyRadius: 0,
       hideGridX: true,
       hideGridY: true,
-      nextCharacter: 1,
-      // previousCharacter: 0
     };
   }
 
-  changeCharacterForward = (e) => {
+  componentDidMount() {
     this.setState({
-      //Must remember to put an if statement to stop incrementation later
-      nextCharacter: this.state.nextCharacter + 1,
-      currentCharacter: this.state.characters[this.state.nextCharacter],
+      currentCharacter: this.state.characters[0],
     });
-  };
+  }
 
-  changeCharacterBackwards = (e) => {
-    if (this.state.nextCharacter > 0) {
-      this.setState({
-        nextCharacter: this.state.nextCharacter - 1,
-        currentCharacter: this.state.characters[this.state.nextCharacter - 1],
-      });
+  changeCharacter = (e) => {
+    let firstIdx = 0;
+    let lastIdx = this.state.characters.length - 1;
+    let currentIdx = this.state.currentCharacter.id - 1;
+    if (e.target.value === "Previous") {
+      if (currentIdx === firstIdx) {
+        this.setState({
+          currentCharacter: this.state.characters[lastIdx],
+        });
+      } else {
+        this.setState({
+          currentCharacter: this.state.characters[currentIdx - 1],
+        });
+      }
+    } else {
+      if (currentIdx === lastIdx) {
+        this.setState({
+          currentCharacter: this.state.characters[firstIdx],
+        });
+      } else {
+        this.setState({
+          currentCharacter: this.state.characters[currentIdx + 1],
+        });
+      }
     }
   };
 
   render() {
     return (
-      <>
-        <div className="App">
-          <div>
-            <button onClick={this.props.toggleIsLearning}>Home</button>
-          </div>
-          <div class="container">
-            <div /*class="four columns"*/>
-              <CanvasDraw
-                className="canvas"
-                brushRadius={this.state.brushRadius}
-                canvasWidth={this.state.canvasWidth}
-                canvasHeight={this.state.canvasHeight}
-                lazyRadius={this.state.lazyRadius}
-                hideGridX={this.state.hideGridX}
-                hideGridY={this.state.hideGridY}
-              />
+      <div className="Learn">
+        <div className="Floor">
+          <div className="Table">
+            <div className="Brush">
+              <div className="Engraving">
+                <Container>
+                  <Row>
+                    <Col>
+                      <div className="Canvas">
+                        <CanvasDraw
+                          brushRadius={this.state.brushRadius}
+                          canvasWidth={this.state.canvasWidth}
+                          canvasHeight={this.state.canvasHeight}
+                          lazyRadius={this.state.lazyRadius}
+                          hideGridX={this.state.hideGridX}
+                          hideGridY={this.state.hideGridY}
+                        />
+                      </div>
+                    </Col>
+                    <Col>
+                      <div className="Character">
+                        <img
+                          src={this.state.currentCharacter.animation}
+                          width={this.state.canvasWidth}
+                          alt={this.state.currentCharacter.romaji}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
             </div>
-            <div class="animation">
-              <img
-                src={this.state.currentCharacter.animation}
-                height="60"
-                alt={this.state.currentCharacter.romaji}
-              />
-            </div>
           </div>
-          <br></br>
-          <div>
-            <button onClick={(e) => this.changeCharacterBackwards(e)}>
-              Previous
-            </button>
-            {/*<button>
-              Tutorial
-            </button>*/}
-            <button onClick={(e) => this.changeCharacterForward(e)}>
-              Next
-            </button>
-          </div>
-          {console.log(this.state.currentCharacter, this.state.nextCharacter)}
         </div>
-      </>
+      </div>
     );
   }
 }

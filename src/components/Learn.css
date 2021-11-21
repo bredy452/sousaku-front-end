@@ -1,0 +1,31 @@
+.Learn {
+  height: 100%;
+  margin: 0;
+}
+
+.Floor {
+  background: url("../assets/floor.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+
+.Table {
+  background: url("../assets/table.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 70%;
+  margin: 0;
+}
+
+.Brush {
+  background: no-repeat center/10% url("../assets/brush.png");
+  padding: 1rem;
+}
+
+.Engraving {
+  background: no-repeat center/50% url("../assets/engraving.png");
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+}
