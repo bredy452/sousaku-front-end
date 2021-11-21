@@ -27,15 +27,55 @@ export default class App extends Component {
   render() {
     return (
       <div class="floor">
-        <div class="table">
-          <div class="ukiyo">
-            <div class="paintArea">
-              <div class="sheets">
-                {this.state.isLearning ? (
-                  <Learn toggleLearning={this.toggleLearning} />
-                ) : (
-                  <Home toggleLearning={this.toggleLearning} />
-                )}
+        <div class="fan">
+          <div class="table">
+            <div class="ukiyo">
+              <div class="paintArea">
+                <div class="sheets">
+                  <div class="sousaku">
+                    <div class="paintcolor">
+                      <div class="blackpaint">
+                        <div class="redpaint">
+                          <div class="temporaryredpaint">
+                            <div class="temporaryblackpaint">
+                              <div class="brush">
+                                <div class="splat">
+                                  <div class="circle1">
+                                    <div class="circle2">
+                                      <div class="circle3">
+                                        <div class="line1">
+                                          <div class="line2">
+                                            <div class="line3">
+                                              <div class="leaves">
+                                                {this.state.isLearning ? (
+                                                  <Learn
+                                                    toggleLearning={
+                                                      this.toggleLearning
+                                                    }
+                                                  />
+                                                ) : (
+                                                  <Home
+                                                    toggleLearning={
+                                                      this.toggleLearning
+                                                    }
+                                                  />
+                                                )}
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

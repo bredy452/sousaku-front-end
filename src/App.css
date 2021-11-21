@@ -2,10 +2,17 @@
   text-align: center;
 }
 
-.floor {
+/*.floor {
   background-image: url(./Floor.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}*/
+
+.fan {
+  background-image: url(./favpng_paper-hand-fan.png);
+  background-repeat: no-repeat;
+  background-size: 20% 30%;
+  background-position: bottom -5px left 130px;
 }
 
 .table {
@@ -25,8 +32,8 @@
 .paintArea {
   background-image: url(./utility-side-table.png);
   background-repeat: no-repeat;
-  background-size: 50% 30%;
-  background-position: top;
+  background-size: 50% 20%;
+  background-position: top 30px left 340px;
 }
 
 .sheets {
@@ -34,6 +41,103 @@
   background-repeat: no-repeat;
   background-size: 65% 80%;
   background-position: bottom;
+}
+
+.sousaku {
+  background-image: url(./Sousaku.png);
+  background-repeat: no-repeat;
+  background-size: 10% 10%;
+  background-position: bottom 5px right 10px;
+}
+
+.paintcolor {
+  background-image: url(./paintcolor.png);
+  background-repeat: no-repeat;
+  background-size: 9% 40%;
+  background-position: bottom 65px right 10px;
+}
+
+.blackpaint {
+  background-image: url(./blackpaint.png);
+  background-repeat: no-repeat;
+  background-size: 8% 15%;
+  background-position: top 45px right 330px;
+}
+
+.redpaint {
+  background-image: url(./redpaint.png);
+  background-repeat: no-repeat;
+  background-size: 8% 15%;
+  background-position: top 50px right 385px;
+}
+
+.temporaryblackpaint {
+  background-image: url(./temporary-black-paint.png);
+  background-repeat: no-repeat;
+  background-size: 5% 12%;
+  background-position: bottom 90px right 35px;
+}
+
+.temporaryredpaint {
+  background-image: url(./temporary-red-paint.png);
+  background-repeat: no-repeat;
+  background-size: 5% 12%;
+  background-position: bottom 150px right 35px;
+}
+
+.brush {
+  background-image: url(./brush.png);
+  background-repeat: no-repeat;
+  /* background-size: 10% 10%;*/
+  background-position: top 55px right 500px;
+}
+
+.splat {
+  background-image: url(./splat.png);
+  background-repeat: no-repeat;
+  background-position: top 35px right 630px;
+}
+
+.circle1 {
+  background-image: url(./Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top 130px right 100px;
+}
+
+.circle2 {
+  background-image: url(./Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top 130px right 65px;
+}
+
+.circle3 {
+  background-image: url(./Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top 130px right 30px;
+}
+
+.line1 {
+  background-image: url(./line1.png);
+  background-repeat: no-repeat;
+  background-position: top -50px right 110px;
+}
+
+.line2 {
+  background-image: url(./line2.png);
+  background-repeat: no-repeat;
+  background-position: top -50px right 75px;
+}
+
+.line3 {
+  background-imae: url(./line3.png);
+  background-repeat: no-repeat;
+  background-posigtion: top -50px right 40px;
+}
+
+.leaves {
+  background-image: url(./leaves.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .App-logo {
@@ -69,6 +173,10 @@
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+.animation {
+  margin-top: 100px;
 }
 
 .homeButton {

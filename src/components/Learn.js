@@ -61,7 +61,7 @@ export default class Learn extends Component {
                 hideGridY={this.state.hideGridY}
               />
             </div>
-            <div /*class="four columns animation"*/>
+            <div class="animation">
               <img
                 src={this.state.currentCharacter.animation}
                 height="60"
