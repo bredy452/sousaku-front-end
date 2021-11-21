@@ -13,14 +13,7 @@ export default class App extends Component {
     };
   }
 
-  isMobileOrNot = () => {
-    let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      /* your code here */
-    }
-  };
-
-  toggleLearning = () => {
+  toggleIsLearning = () => {
     this.setState({
       isLearning: !this.state.isLearning,
     });
@@ -35,123 +28,12 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className={this.state.isLearning ? "floor" : null}>
-        <div className={this.state.isLearning ? "fan" : null}>
-          <div className={this.state.isLearning ? "table" : null}>
-            <div className={this.state.isLearning ? "ukiyo" : null}>
-              <div className={this.state.isLearning ? "paintArea" : null}>
-                <div className={this.state.isLearning ? "sheets" : null}>
-                  <div className={this.state.isLearning ? "sousaku" : null}>
-                    <div
-                      className={this.state.isLearning ? "paintcolor" : null}
-                    >
-                      <div
-                        className={this.state.isLearning ? "blackpaint" : null}
-                      >
-                        <div
-                          className={this.state.isLearning ? "redpaint" : null}
-                        >
-                          <div
-                            className={
-                              this.state.isLearning ? "temporaryredpaint" : null
-                            }
-                          >
-                            <div
-                              className={
-                                this.state.isLearning
-                                  ? "temporaryblackpaint"
-                                  : null
-                              }
-                            >
-                              <div
-                                className={
-                                  this.state.isLearning ? "brush" : null
-                                }
-                              >
-                                <div
-                                  className={
-                                    this.state.isLearning ? "splat" : null
-                                  }
-                                >
-                                  <div
-                                    className={
-                                      this.state.isLearning ? "circle1" : null
-                                    }
-                                  >
-                                    <div
-                                      className={
-                                        this.state.isLearning ? "circle2" : null
-                                      }
-                                    >
-                                      <div
-                                        className={
-                                          this.state.isLearning
-                                            ? "circle3"
-                                            : null
-                                        }
-                                      >
-                                        <div
-                                          className={
-                                            this.state.isLearning
-                                              ? "line1"
-                                              : null
-                                          }
-                                        >
-                                          <div
-                                            className={
-                                              this.state.isLearning
-                                                ? "line2"
-                                                : null
-                                            }
-                                          >
-                                            <div
-                                              className={
-                                                this.state.isLearning
-                                                  ? "line3"
-                                                  : null
-                                              }
-                                            >
-                                              <div
-                                                className={
-                                                  this.state.isLearning
-                                                    ? "leaves"
-                                                    : null
-                                                }
-                                              >
-                                                {this.state.isLearning ? (
-                                                  <Learn
-                                                    toggleLearning={
-                                                      this.toggleLearning
-                                                    }
-                                                    changeBrush={this.state}
-                                                  />
-                                                ) : (
-                                                  <Home
-                                                    toggleLearning={
-                                                      this.toggleLearning
-                                                    }
-                                                  />
-                                                )}
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="App">
+        {this.state.isLearning ? (
+          <Learn toggleIsLearning={this.toggleIsLearning} />
+        ) : (
+          <Home toggleIsLearning={this.toggleIsLearning} />
+        )}
       </div>
     );
   }

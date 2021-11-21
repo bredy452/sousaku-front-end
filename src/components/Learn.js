@@ -1,4 +1,8 @@
+import "./Learn.css";
 import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import CanvasDraw from "react-canvas-draw";
 import getCharacters from "../getCharacters";
 
@@ -11,8 +15,9 @@ export default class Learn extends Component {
       currentCharacter: {
         romaji: "a",
         id: 1,
-        animation: "https://yosida.com/images/kana/a.gif",
+        animation: "https://yosida.com/images/kana/a.gif"
       },
+      nextCharacter: 1,
       // Canvas
       brushRadius: 2,
       canvasWidth: 200,
@@ -20,9 +25,13 @@ export default class Learn extends Component {
       lazyRadius: 0,
       hideGridX: true,
       hideGridY: true,
-      nextCharacter: 1,
-      // previousCharacter: 0
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      currentCharacter: this.state.characters[0],
+    });
   }
 
   changeCharacterForward = (e) => {
@@ -42,6 +51,34 @@ export default class Learn extends Component {
     }
   };
 
+  // changeCharacter = (e) => {
+  //   console.log(e.target.closest("button").id)
+  //   let firstIdx = 0;
+  //   let lastIdx = this.state.characters.length - 1;
+  //   let currentIdx = this.state.currentCharacter.id - 1;
+  //   if (e.target.closest("button").id === "Previous") {
+  //     if (currentIdx === firstIdx) {
+  //       this.setState({
+  //         currentCharacter: this.state.characters[lastIdx],
+  //       });
+  //     } else {
+  //       this.setState({
+  //         currentCharacter: this.state.characters[currentIdx - 1],
+  //       });
+  //     }
+  //   } else {
+  //     if (currentIdx === lastIdx) {
+  //       this.setState({
+  //         currentCharacter: this.state.characters[firstIdx],
+  //       });
+  //     } else {
+  //       this.setState({
+  //         currentCharacter: this.state.characters[currentIdx + 1],
+  //       });
+  //     }
+  //   }
+  // }
+
   render() {
     return (
       <>
@@ -51,26 +88,7 @@ export default class Learn extends Component {
           <div>
             <button onClick={this.props.toggleLearning}>Back To Home</button>
           </div>
-          <div className="container">
-            <div /*class="four columns"*/>
-              <CanvasDraw
-                className="canvas"
-                brushRadius={this.state.brushRadius}
-                canvasWidth={this.state.canvasWidth}
-                canvasHeight={this.state.canvasHeight}
-                lazyRadius={this.state.lazyRadius}
-                hideGridX={this.state.hideGridX}
-                hideGridY={this.state.hideGridY}
-              />
-            </div>
-            <div className="animation">
-              <img
-                src={this.state.currentCharacter.animation}
-                height="60"
-                alt={this.state.currentCharacter.romaji}
-              />
-            </div>
-          </div>
+          
           <br></br>
           <div>
             <button onClick={(e) => this.changeCharacterBackwards(e)}>
@@ -83,9 +101,80 @@ export default class Learn extends Component {
               Next
             </button>
           </div>
-          {console.log(this.state.currentCharacter, this.state.nextCharacter)}
+      <div className="Learn">
+        <div className="Floor">
+          <div className="Fan">
+          <div className="Leaves">
+            <div className="Table">
+              <div className="TableSide">
+                <div className="Splat">
+                  <div className="Brush">
+                    <div className="PaintBlack">
+                      <div className="PaintRed">
+                      <div className="Sousaku">
+                      <div className="Palette">
+                      <div className="PaletteRed">
+                      <div className="PaletteBlack">
+                      <div className="Circle1">
+                      <div className="Circle2">
+                      <div className="Circle3">
+                      <div className="Line1">
+                      <div className="Line2">
+                      <div className="Line3">
+                  <div className="Engraving">
+                    <div className="Papers">
+                                    
+                                          
+                                            
+                <Container>
+                  <Row>
+                    <Col md={{ span: 3, offset: 5 }}>
+                      <div className="Canvas">
+                        <CanvasDraw
+                          brushRadius={this.state.brushRadius}
+                          canvasWidth={this.state.canvasWidth}
+                          canvasHeight={this.state.canvasHeight}
+                          lazyRadius={this.state.lazyRadius}
+                          hideGridX={this.state.hideGridX}
+                          hideGridY={this.state.hideGridY}
+                        />
+                      </div>
+                    </Col>
+                    <Col>
+                      <div className="Character">
+                        <img
+                          src={this.state.currentCharacter.animation}
+                          width={this.state.canvasWidth}
+                          alt={this.state.currentCharacter.romaji}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </>
+      </div>
+    </>
     );
   }
 }
