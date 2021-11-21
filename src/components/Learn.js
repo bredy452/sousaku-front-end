@@ -47,7 +47,7 @@ export default class Learn extends Component {
       <>
         <div className="App">
           <div>
-            <button onClick={this.props.toggleLearning}>Back To Home</button>
+            <button onClick={this.props.toggleIsLearning}>Home</button>
           </div>
           <div class="container">
             <div /*class="four columns"*/>
