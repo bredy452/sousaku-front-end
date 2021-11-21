@@ -45,7 +45,8 @@ export default class Learn extends Component {
   render() {
     return (
       <>
-      {console.log(this.props.changeBrush)}
+        {console.log(this.props.changeBrush)}
+        
         <div className="App">
           <div>
             <button onClick={this.props.toggleLearning}>Back To Home</button>
