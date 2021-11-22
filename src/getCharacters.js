@@ -1,6 +1,8 @@
 const getCharacters = () => {
   let baseUrl = "https://yosida.com/images/kana/";
+  let baseUrl2 = "https://drmoku.com/content/uploads/2018/06/";
   let fileExt = ".gif";
+  let fileExt2 = ".mp3?_=29";
   let allRomaji = [
     "a",
     "i",
@@ -56,6 +58,7 @@ const getCharacters = () => {
     character["romaji"] = currentRomaji;
     character["id"] = currentId;
     character["animation"] = baseUrl + currentRomaji + fileExt;
+    character["pronunciation"] = baseUrl2 + currentRomaji + fileExt2;
     characters.push(character);
     currentId++;
   }
