@@ -6,6 +6,23 @@ import Col from "react-bootstrap/Col";
 import CanvasDraw from "react-canvas-draw";
 import getCharacters from "../getCharacters";
 import Badge from "react-bootstrap/Badge";
+import sheet from "../assets/writeA.png"
+import table from "../assets/table.png"
+import tableSide from "../assets/tableSide.png"
+import engraving from "../assets/engraving.png"
+import paintColors from "../assets/paintColors.png"
+import brush from "../assets/brush.png"
+import paintRight from "../assets/paintRight.png"
+import floor from "../assets/floor.png"
+import brushStroke from "../assets/brushStroke.png"
+import splat from "../assets/splat.png"
+import fan from "../assets/fan.png"
+import leaves from "../assets/leaves.png"
+import hiraganaBoard from "../assets/hiraganaBoard.png"
+import scrolls from "../assets/scrolls.png"
+import papers from "../assets/papers.png"
+
+import Image from "react-bootstrap/Image"
 
 export default class Learn extends Component {
   constructor(props) {
@@ -20,12 +37,14 @@ export default class Learn extends Component {
       },
       nextCharacter: 1,
       // Canvas
-      brushRadius: 2,
+      brushRadius: 4,
       canvasWidth: 200,
       canvasHeight: 200,
       lazyRadius: 0,
       hideGridX: true,
       hideGridY: true,
+      imgSrc: `${sheet}`,
+      disabled: false,
     };
   }
 
@@ -92,40 +111,156 @@ export default class Learn extends Component {
   render() {
     return (
       <>
+      {console.log(this.state.imgSrc)}
         <div className="App">
-          <div className="Learn">
-            <div className="Floor">
-              <div>
+          <div>
+            <Image src={floor} fluid className="floor"/>
+          </div>
+          <div className="fanDiv">
+            <Image src={fan} fluid className="fan"/>
+          </div>
+          <div className="tableDiv">
+            <Image src={table} fluid className="table"/>
+          </div>
+          <div className="tableSideDiv">
+            <Image src={tableSide} fluid className="tableSide"/>
+          </div>
+          <div className="engravingDiv">
+            <Image src={engraving} fluid className="engraving"/>
+          </div>
+          <div className="paintColorsDiv">
+            <Image src={paintColors} fluid className="paintColors"/>
+          </div>
+          <div className="brushDiv">
+            <Image src={brush} fluid className="brush"/>
+          </div>
+          <div fluid className="paintRightDiv">
+            <Image src={paintRight} fluid className="paintRight"/>
+          </div>
+          <div fluid className="brushStrokeDiv">
+            <Image src={brushStroke} fluid className="brushStoke"/>
+          </div>
+          <div className="splatDiv">
+            <Image src={splat} fluid className="splat"/>
+          </div>
+          <div className="leavesDiv">
+            <Image src={leaves} fluid className="leaves"/>
+          </div>
+          <div className="hiraganaBoardDiv">
+            <Image src={hiraganaBoard} fluid className="hiraganaBoard"/>
+          </div>
+          <div className="scrollsDiv">
+            <Image src={scrolls} fluid className="scrolls"/>
+          </div>
+          <div className="papersDiv">
+            <Image src={papers} fluid className="papers"/>
+          </div>
+            <Container>
+              <Row>
+                <Col
+                   md={{
+                    span: 2,
+                    offset: 5,
+                  }}
+                >
+                <div className="Canvas">
+                  <CanvasDraw
+                    brushRadius={
+                      this.state.brushRadius
+                    }
+                    canvasWidth={
+                      this.state.canvasWidth
+                    }
+                    canvasHeight={
+                      this.state.canvasHeight
+                    }
+                    lazyRadius={
+                      this.state.lazyRadius
+                    }
+                    hideGridX={
+                      this.state.hideGridX
+                    }
+                    hideGridY={
+                      this.state.hideGridY
+                    }
+                    imgSrc={
+                      this.state.imgSrc
+                    }
+                    disabled={
+                      this.state.disabled
+                    }
+                  />
+                </div>
+                </Col>
+                <Col
+                  md={{
+                    span: 4,
+                  }}
+                >
+                <div className="Character">
+                  <img
+                    className="Hiragana"
+                    src={
+                      this.state.currentCharacter.animation
+                    }
+                    width={150}
+                    alt={
+                      this.state.currentCharacter.romaji
+                    }
+                  />
+                  <figure>
+                    <audio
+                      controls
+                      src={
+                        this.state.currentCharacter.pronunciation
+                      }
+                    >
+                      Your browser does not support the{" "}
+                      <code>
+                        audio
+                      </code>{" "}
+                        element.
+                      </audio>*/}
+                  </figure>
+                  </div>*/}
+                  </Col>
+                </Row>*/}
+              </Container>
+          
+
+          
+          {/*<div className="Learn">
+            {/*<div className="Floor">*/}
+              {/*<div>
                 <Badge as="button" pill bg="light" text="warning" onClick={""}>
                   Reset
                 </Badge>
-              </div>
+              </div>*/}
 
-              <div className="Fan">
-                <div className="Leaves">
-                  <div className="Table">
-                    <div className="TableSide">
-                      <div className="Splat">
-                        <div className="Brush">
+              {/*<div className="Fan">*/}
+                {/*<div className="Leaves">*/}
+                  {/*<div className="Table">*/}
+                    {/*<div className="TableSide">*/}
+                      {/*<div className="Splat">*/}
+                        {/*<div className="Brush">
                           <div className="PaintBlack">
                             <div className="PaintRed">
-                              <div className="Sousaku">
-                                <div className="Palette">
+                              <div className="Sousaku">*/}
+                                {/*<div className="Palette">
                                   <div className="PaletteRed">
                                     <div className="PaletteBlack">
                                       <div className="Circle1">
                                         <div className="Circle2">
-                                          <div className="Circle3">
-                                            <div
+                                          <div className="Circle3">*/}
+                                            {/*<div
                                               onClick={(e) => this.target(e)}
                                               className="Line1"
                                             >
                                               <div className="Line2">
-                                                <div className="Line3">
-                                                  <div className="Engraving">
-                                                    {/*<div className="Papers">*/}
-                                                    <Container>
-                                                      <Row>
+                                                <div className="Line3">*/}
+                                                  {/*<div className="Engraving">*/}
+                                                    {/*<Container>*/}
+                                                      {/*<Row>
                                                         <Col
                                                           md={{
                                                             span: 2,
@@ -157,6 +292,11 @@ export default class Learn extends Component {
                                                               hideGridY={
                                                                 this.state
                                                                   .hideGridY
+                                                              }
+                                                              imgSrc={this.state.imgSrc}
+                                                              disabled={
+                                                                this.state
+                                                                  .disabled
                                                               }
                                                             />
                                                           </div>
@@ -196,6 +336,7 @@ export default class Learn extends Component {
                                                         >
                                                           <div className="Character">
                                                             <img
+                                                              className="Hiragana"
                                                               src={
                                                                 this.state
                                                                   .currentCharacter
@@ -207,8 +348,8 @@ export default class Learn extends Component {
                                                                   .currentCharacter
                                                                   .romaji
                                                               }
-                                                            />
-                                                            <figure>
+                                                            />*/}
+                                                            {/*<figure>
                                                               <audio
                                                                 controls
                                                                 src={
@@ -216,41 +357,41 @@ export default class Learn extends Component {
                                                                     .currentCharacter
                                                                     .pronunciation
                                                                 }
-                                                              >
-                                                                Your browser
+                                                              >*/}
+                                                                {/*Your browser
                                                                 does not support
                                                                 the{" "}
                                                                 <code>
                                                                   audio
                                                                 </code>{" "}
                                                                 element.
-                                                              </audio>
-                                                            </figure>
-                                                          </div>
-                                                        </Col>
-                                                      </Row>
-                                                    </Container>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                                                              </audio>*/}
+                                                            {/*</figure>
+                                                          </div>*/}
+                                                        {/*</Col>
+                                                      </Row>*/}
+                                                   {/* </Container>
+                                                  </div>*/}
+                                               {/* </div>
+                                              </div>*/}
+                                            {/*</div>
+                                          </div>*/}
+                                      {/*  </div>
+                                      </div>*/}
+                                    {/*</div>
+                                  </div>*/}
+                               {/* </div>
+                              </div>*/}
+                           {/* </div>
+                          </div>*/}
+                        {/*</div>
+                      </div>*/}
+                    {/*</div>
+                  </div>*/}
+                {/*</div>*/}
+              {/*</div>*/}
+            {/*</div>*/}
+          {/*</div>*/}
         </div>
       </>
     );

@@ -3,22 +3,214 @@
   margin: 0;
 }
 
-.Floor {
+
+/*.Table {
+  
+  background: url("../assets/table.png") no-repeat center;
+  background-size: cover;
+  height: 322px;
+  width: 579px;
+}*/
+
+.tableSide {
+  width: 378px;
+  height: 34px;
+}
+
+.tableSideDiv {
+  margin-top: -315px;
+}
+
+.table {
+  width: 579px;
+  height: 322px;
+}
+
+.tableDiv {
+  margin-top: -280px;
+}
+
+.engraving {
+  width: 350px;
+  height: 250px;
+}
+
+.engravingDiv {
+  margin-top: -5px;
+}
+
+.paintColors {
+  width: 40px;
+  height: 35px;
+}
+
+.paintColorsDiv {
+  margin-top: -275px;
+  margin-left: 280px;
+}
+
+.brush {
+  width: 70px;
+  height: 22px;
+  
+}
+
+.brushDiv {
+  margin-top: -35px;
+  margin-left: 110px;
+  transform: rotate(-5.28deg);
+}
+
+.paintRight {
+  width: 104px;
+  height: 133px;
+}
+
+.paintRightDiv {
+  margin-top: 140px;
+  margin-right: -650px;
+}
+
+.floor{
+  width: 897px;
+  height: 404px;
+}
+
+.brushStrokeDiv {
+  margin-top: -270px;
+  margin-right: -650px;
+
+}
+
+.brushStroke {
+  width: 156px;
+  height: 102px;
+}
+
+.splat {
+  width: 28px;
+  height: 21px;
+}
+
+.splatDiv {
+  margin-top: -197px;
+  margin-left: 35px;
+}
+
+.fanDiv {
+  margin-top: -260px;
+  margin-left: -590px;
+}
+
+.fan {
+  width: 202px;
+  height: 160px;
+}
+
+.leavesDiv {
+  margin-top: -280px;
+  margin-left: -700px;
+}
+
+.leaves {
+  width: 180px;
+  height: 680px;
+}
+
+.hiraganaBoardDiv {
+  margin-top: -450px;
+  margin-left: -750px; 
+}
+
+.hiraganaBoard {
+  width: 93px;
+  height: 320px; 
+}
+
+.scrollsDiv {
+  margin-top: -220px;
+  margin-left: -390px; 
+}
+
+.scrolls {
+  width: 132px;
+  height: 120px;  
+}
+
+.papersDiv {
+  margin-top: -140px;
+  margin-left: 390px;
+}
+
+.papers {
+
+}
+
+
+/*.TableSide {
+
+  background-image: url("../assets/tableSide.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 436px;
+  height: 34px;
+  padding-top: 70px;
+  margin: auto;
+}
+*/
+.Engraving {
+  background: url("../assets/engraving.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 417px;
+  height: 250px;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.Fan {
+  background-image: url("../assets/fan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 50px;
+  background-position: right;
+  width: 131px;
+  height: 145px;
+  /*text-align: center;*/
+}
+
+
+@media (min-width: 897px) {
+
+.table {
+  /*background: url("../assets/table.png") no-repeat center center;
+  background-size: cover;*/
+  width: 1345px;
+  height: 746px;
+  /*margin: 0;*/
+}
+
+}
+
+/*.Floor {
   background: url("../assets/floor.png") no-repeat center center;
   background-size: cover;
   height: 100%;
   margin: 0;
   padding: 2rem;
 }
-
-.Table {
+*/
+/*.Table {
+  
   background: url("../assets/table.png") no-repeat center center;
-  background-size: 60% 100%;
-  height: 70%;
+  height: 746px;
+  width: 1345px;
   margin: 0;
-}
+}*/
 
-.Brush {
+/*.Brush {
   background: no-repeat center/10% url("../assets/brush.png");
   padding: 1rem;
   background-position: top 45px right 550px;
@@ -28,7 +220,6 @@
   background: no-repeat center/50% url("../assets/engraving.png");
   background-size: 40% 80%;
   background-position: top 70px left 430px;
-  /*height: 100%;*/
   margin: 0;
   padding: 5rem;
 }
@@ -38,7 +229,6 @@
   background-repeat: no-repeat;
   background-position: bottom 100px left 150px;
   height: 100%;
-  /*margin: 0;*/
   padding: 1rem;
 }
 
@@ -47,9 +237,6 @@
   background-repeat: no-repeat;
   background-size: 40% 20%;
   background-position: top 15px left 450px;
-  /*height: 100%;*/
-  /* margin: 0;
-  padding: 1rem;*/
 }
 
 .Splat {
@@ -140,15 +327,160 @@
 .Leaves {
   background-image: url(../assets/leaves.png);
   background-repeat: no-repeat;
-  /*background-size: 7% 100%;*/
   background-position: left;
 }
 
-/*.canvas {
-  margin-left: 150px;
-  margin-right: 50px;
-  margin-top: 90px;
+.Canvas {
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+.Hiragana {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3);
 }*/
+/* a 5 */
+
+
+/* NEXT/PREV TOGGLE */
+
+/*position: absolute;
+width: 67px;
+height: 261.27px;
+left: 841px;
+top: 973px;
+
+transform: rotate(-90deg);*/
+
+
+/* Polygon 10 */
+
+/*position: absolute;
+width: 67px;
+height: 41.06px;
+left: 841px;
+top: 973px;
+
+background: #706D6D;
+box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(-90deg);*/
+
+
+/* Polygon 9 */
+
+/*position: absolute;
+width: 67px;
+height: 41.06px;
+left: 1102.27px;
+top: 973px;
+
+background: #706D6D;
+box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
+transform: matrix(0, -1, -1, 0, 0, 0);
+*/
+
+/* Ellipse 9 */
+
+/*position: absolute;
+width: 38.9px;
+height: 38.9px;
+left: 952.5px;
+top: 919.94px;
+
+background: #706D6D;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);*/
+
+
+
+
+
+
+
+
+
+
+
+/* paint srtrokes unselected */
+
+/*position: absolute;
+width: 289px;
+height: 189.2px;
+left: 1659px;
+top: 478px;
+
+transform: rotate(-90deg);*/
+
+
+/* Group 6 */
+
+/*position: absolute;
+width: 288.45px;
+height: 101.61px;
+left: 1760.61px;
+top: 189px;
+
+filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.17));
+transform: rotate(89.69deg);*/
+
+
+/* Lovepik_com-401425366-ancient-ink-brush-strokes 1 */
+
+/*position: absolute;
+width: 288.45px;
+height: 101.61px;
+left: 1760.61px;
+top: 189px;
+
+background: url(.png);
+transform: rotate(89.69deg);*/
+
+
+/* Group 10 */
+
+/*position: absolute;
+width: 240.63px;
+height: 93.27px;
+left: 1846.89px;
+top: 207.25px;*/
+
+/*filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.17));
+transform: rotate(89.69deg);*/
+
+
+/* Lovepik_com-401425366-ancient-ink-brush-strokes 1 */
+
+/*position: absolute;
+width: 240.33px;
+height: 37.49px;
+left: 1791.11px;
+top: 207.55px;
+
+background: url(.png);
+transform: rotate(89.69deg);*/
+
+
+/* Lovepik_com-401425366-ancient-ink-brush-strokes 3 */
+
+/*position: absolute;
+width: 240.33px;
+height: 26.48px;
+left: 1846.89px;
+top: 207.55px;
+
+background: url(.png);
+transform: rotate(89.69deg);
+*/
+
+/* kisspng-ink-brush-japanese-tea-ceremony-budaya-tionghoa-pen-5a8b71dc350856 2 */
+
+/*position: absolute;
+width: 69.79px;
+height: 35.46px;
+left: 430.1px;
+top: 62.21px;
+
+background: url(.png);
+box-shadow: 0px -1.5px 2px rgba(0, 0, 0, 0.36);
+transform: rotate(-14.28deg);
+*/
