@@ -3,7 +3,6 @@
   margin: 0;
 }
 
-
 /*.Table {
   
   background: url("../assets/table.png") no-repeat center;
@@ -31,12 +30,12 @@
 }
 
 .engraving {
-  width: 350px;
+  width: 380px;
   height: 250px;
 }
 
 .engravingDiv {
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 .paintColors {
@@ -52,7 +51,6 @@
 .brush {
   width: 70px;
   height: 22px;
-  
 }
 
 .brushDiv {
@@ -71,7 +69,7 @@
   margin-right: -650px;
 }
 
-.floor{
+.floor {
   width: 897px;
   height: 404px;
 }
@@ -79,7 +77,6 @@
 .brushStrokeDiv {
   margin-top: -270px;
   margin-right: -650px;
-
 }
 
 .brushStroke {
@@ -98,7 +95,7 @@
 }
 
 .fanDiv {
-  margin-top: -260px;
+  margin-top: -240px;
   margin-left: -590px;
 }
 
@@ -118,23 +115,23 @@
 }
 
 .hiraganaBoardDiv {
-  margin-top: -450px;
-  margin-left: -750px; 
+  margin-top: -455px;
+  margin-left: -700px;
 }
 
 .hiraganaBoard {
   width: 93px;
-  height: 320px; 
+  height: 320px;
 }
 
 .scrollsDiv {
   margin-top: -220px;
-  margin-left: -390px; 
+  margin-left: -390px;
 }
 
 .scrolls {
   width: 132px;
-  height: 120px;  
+  height: 120px;
 }
 
 .papersDiv {
@@ -142,10 +139,94 @@
   margin-left: 390px;
 }
 
-.papers {
+.drawing {
+  margin-top: -150px;
+}
+
+.canvas {
+  margin-top: -40px;
+  margin-left: -30px;
+}
+
+.audio {
+  margin-top: 3px;
+}
+
+.character {
+  margin-right: 35px;
 
 }
 
+.letters {
+  width: 100px;
+  height: 300px;
+  margin-top: -320px;
+  margin-left: 20px;
+}
+
+.mobileA {
+  margin-left: 3px;
+}
+
+.mobileKa {
+  margin-left: 6px;
+  padding-right: 4px;
+}
+
+.mobileSa {
+  margin-left: 3px;
+  margin-top: 20px;
+  /*padding-right: 4px;*/
+}
+
+.mobileTa {
+  margin-top: 20px;
+  margin-left: 6px;
+  padding-right: 4px;
+}
+
+.mobileNa {
+  margin-top: 20px;
+  margin-left: 3px;
+  /*padding-right: 4px;*/
+}
+
+.mobileHa {
+  margin-top: 20px;
+  margin-left: 6px;
+  padding-right: 4px;
+}
+
+.mobileMa {
+  margin-top: 20px;
+  margin-left: 3px;
+  /*padding-right: 4px;*/
+}
+
+.mobileYa {
+  margin-top: 20px;
+  margin-left: 6px;
+  padding-right: 4px;
+}
+
+.mobileRa {
+  margin-top: 20px;
+  margin-left: 3px;
+  /*padding-right: 4px;*/
+}
+
+.mobileWa {
+  margin-top: 20px;
+  margin-left: 6px;
+  padding-right: 4px;
+}
+
+.mobileN {
+  margin-top: 20px;
+}
+/*.hiragana {
+  background-color: #FBF0E0;;
+}*/
 
 /*.TableSide {
 
@@ -159,7 +240,8 @@
   margin: auto;
 }
 */
-.Engraving {
+
+/*.Engraving {
   background: url("../assets/engraving.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -178,20 +260,16 @@
   background-position: right;
   width: 131px;
   height: 145px;
-  /*text-align: center;*/
-}
-
+}*/
 
 @media (min-width: 897px) {
-
-.table {
-  /*background: url("../assets/table.png") no-repeat center center;
+  .table {
+    /*background: url("../assets/table.png") no-repeat center center;
   background-size: cover;*/
-  width: 1345px;
-  height: 746px;
-  /*margin: 0;*/
-}
-
+    width: 1345px;
+    height: 746px;
+    /*margin: 0;*/
+  }
 }
 
 /*.Floor {
@@ -342,7 +420,6 @@
 }*/
 /* a 5 */
 
-
 /* NEXT/PREV TOGGLE */
 
 /*position: absolute;
@@ -352,7 +429,6 @@ left: 841px;
 top: 973px;
 
 transform: rotate(-90deg);*/
-
 
 /* Polygon 10 */
 
@@ -365,7 +441,6 @@ top: 973px;
 background: #706D6D;
 box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
 transform: rotate(-90deg);*/
-
 
 /* Polygon 9 */
 
@@ -391,16 +466,6 @@ top: 919.94px;
 background: #706D6D;
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);*/
 
-
-
-
-
-
-
-
-
-
-
 /* paint srtrokes unselected */
 
 /*position: absolute;
@@ -410,7 +475,6 @@ left: 1659px;
 top: 478px;
 
 transform: rotate(-90deg);*/
-
 
 /* Group 6 */
 
@@ -423,7 +487,6 @@ top: 189px;
 filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.17));
 transform: rotate(89.69deg);*/
 
-
 /* Lovepik_com-401425366-ancient-ink-brush-strokes 1 */
 
 /*position: absolute;
@@ -434,7 +497,6 @@ top: 189px;
 
 background: url(.png);
 transform: rotate(89.69deg);*/
-
 
 /* Group 10 */
 
@@ -447,7 +509,6 @@ top: 207.25px;*/
 /*filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.17));
 transform: rotate(89.69deg);*/
 
-
 /* Lovepik_com-401425366-ancient-ink-brush-strokes 1 */
 
 /*position: absolute;
@@ -458,7 +519,6 @@ top: 207.55px;
 
 background: url(.png);
 transform: rotate(89.69deg);*/
-
 
 /* Lovepik_com-401425366-ancient-ink-brush-strokes 3 */
 

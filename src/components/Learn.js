@@ -6,23 +6,45 @@ import Col from "react-bootstrap/Col";
 import CanvasDraw from "react-canvas-draw";
 import getCharacters from "../getCharacters";
 import Badge from "react-bootstrap/Badge";
-import sheet from "../assets/writeA.png"
-import table from "../assets/table.png"
-import tableSide from "../assets/tableSide.png"
-import engraving from "../assets/engraving.png"
-import paintColors from "../assets/paintColors.png"
-import brush from "../assets/brush.png"
-import paintRight from "../assets/paintRight.png"
-import floor from "../assets/floor.png"
-import brushStroke from "../assets/brushStroke.png"
-import splat from "../assets/splat.png"
-import fan from "../assets/fan.png"
-import leaves from "../assets/leaves.png"
-import hiraganaBoard from "../assets/hiraganaBoard.png"
-import scrolls from "../assets/scrolls.png"
-import papers from "../assets/papers.png"
+import writeA from "../assets/writeA.png";
+import writeKa from "../assets/writeKa.png";
+import writeSa from "../assets/writeSa.png";
+import writeTa from "../assets/writeTa.png";
+import writeNa from "../assets/writeNa.png";
+import writeHa from "../assets/writeHa.png";
+import writeMa from "../assets/writeMa.png";
+import writeYa from "../assets/writeYa.png";
+import writeRa from "../assets/writeRa.png";
+import writeWa from "../assets/writeWa.png";
+import writeN from "../assets/writeN.png";
+import table from "../assets/table.png";
+import tableSide from "../assets/tableSide.png";
+import engraving from "../assets/engraving.png";
+import paintColors from "../assets/paintColors.png";
+import brush from "../assets/brush.png";
+import paintRight from "../assets/paintRight.png";
+import floor from "../assets/floor.png";
+import brushStroke from "../assets/brushStroke.png";
+import splat from "../assets/splat.png";
+import fan from "../assets/fan.png";
+import leaves from "../assets/leaves.png";
+import hiraganaBoard from "../assets/hiraganaBoard.png";
+import scrolls from "../assets/scrolls.png";
+import papers from "../assets/papers.png";
+import mobileA from"../assets/amobileLetters.png";
+import mobileKa from"../assets/kamobileLetters.png";
+import mobileSa from"../assets/samobileLetters.png";
+import mobileTa from"../assets/tamobileLetters.png";
+import mobileNa from"../assets/namobileLetters.png";
+import mobileHa from"../assets/hamobileLetters.png";
+import mobileMa from"../assets/mamobileLetters.png";
+import mobileYa from"../assets/yamobileLetters.png";
+import mobileRa from"../assets/ramobileLetters.png";
+import mobileWa from"../assets/wamobileLetters.png";
+import mobileN from"../assets/nmobileLetters.png";
 
-import Image from "react-bootstrap/Image"
+import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button"
 
 export default class Learn extends Component {
   constructor(props) {
@@ -38,12 +60,12 @@ export default class Learn extends Component {
       nextCharacter: 1,
       // Canvas
       brushRadius: 4,
-      canvasWidth: 200,
+      canvasWidth: 250,
       canvasHeight: 200,
       lazyRadius: 0,
       hideGridX: true,
       hideGridY: true,
-      imgSrc: `${sheet}`,
+      imgSrc: `${writeA}`,
       disabled: false,
     };
   }
@@ -55,15 +77,83 @@ export default class Learn extends Component {
   }
 
   changeCharacterForward = (e) => {
+    console.log(this.state.nextCharacter, this.state.imgSrc)
     e.preventDefault();
-    if (this.state.nextCharacter < 45) {
+    if (this.state.nextCharacter < 45 && this.state.nextCharacter === 1) {
       this.setState({
-        //Must remember to put an if statement to stop incrementation later
+        
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeA}`
       });
+    } else if (this.state.nextCharacter < 45 && this.state.nextCharacter === 6) {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeKa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'sa') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeSa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ta') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeTa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'na') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeNa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ha') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeHa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ma') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeMa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ya') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeYa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ra') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeRa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'wa') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeWa}`
+      })
+    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'n') {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imageSrc:`${writeN}`
+      })
+    } else if (this.state.nextCharacter < 45) {
+      this.setState({
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter]
+      })
     }
-  };
+
+    };
 
   changeCharacterBackwards = (e) => {
     e.preventDefault();
@@ -111,288 +201,116 @@ export default class Learn extends Component {
   render() {
     return (
       <>
-      {console.log(this.state.imgSrc)}
+        {console.log(this.state.imgSrc)}
         <div className="App">
           <div>
-            <Image src={floor} fluid className="floor"/>
+            <Image src={floor} fluid className="floor" />
           </div>
           <div className="fanDiv">
-            <Image src={fan} fluid className="fan"/>
+            <Image src={fan} fluid className="fan" />
           </div>
           <div className="tableDiv">
-            <Image src={table} fluid className="table"/>
+            <Image src={table} fluid className="table" />
           </div>
           <div className="tableSideDiv">
-            <Image src={tableSide} fluid className="tableSide"/>
+            <Image src={tableSide} fluid className="tableSide" />
           </div>
           <div className="engravingDiv">
-            <Image src={engraving} fluid className="engraving"/>
+            <Image src={engraving} fluid className="engraving" />
           </div>
           <div className="paintColorsDiv">
-            <Image src={paintColors} fluid className="paintColors"/>
+            <Image src={paintColors} fluid className="paintColors" />
           </div>
           <div className="brushDiv">
-            <Image src={brush} fluid className="brush"/>
+            <Image src={brush} fluid className="brush" />
           </div>
           <div fluid className="paintRightDiv">
-            <Image src={paintRight} fluid className="paintRight"/>
+            <Image src={paintRight} fluid className="paintRight" />
           </div>
           <div fluid className="brushStrokeDiv">
-            <Image src={brushStroke} fluid className="brushStoke"/>
+            <Image src={brushStroke} fluid className="brushStoke" />
           </div>
           <div className="splatDiv">
-            <Image src={splat} fluid className="splat"/>
+            <Image src={splat} fluid className="splat" />
           </div>
           <div className="leavesDiv">
-            <Image src={leaves} fluid className="leaves"/>
+            <Image src={leaves} fluid className="leaves" />
           </div>
           <div className="hiraganaBoardDiv">
-            <Image src={hiraganaBoard} fluid className="hiraganaBoard"/>
+            <Image src={hiraganaBoard} fluid className="hiraganaBoard" />
           </div>
           <div className="scrollsDiv">
-            <Image src={scrolls} fluid className="scrolls"/>
+            <Image src={scrolls} fluid className="scrolls" />
           </div>
           <div className="papersDiv">
-            <Image src={papers} fluid className="papers"/>
+            <Image src={papers} fluid className="papers" />
           </div>
-            <Container>
-              <Row>
-                <Col
-                   md={{
-                    span: 2,
-                    offset: 5,
-                  }}
-                >
-                <div className="Canvas">
+          <Container className="drawing">
+            <Row>
+              <Col
+                md={{
+                  span: 3,
+                  offset: 4,
+                }}
+              >
+                <div className="canvas">
                   <CanvasDraw
-                    brushRadius={
-                      this.state.brushRadius
-                    }
-                    canvasWidth={
-                      this.state.canvasWidth
-                    }
-                    canvasHeight={
-                      this.state.canvasHeight
-                    }
-                    lazyRadius={
-                      this.state.lazyRadius
-                    }
-                    hideGridX={
-                      this.state.hideGridX
-                    }
-                    hideGridY={
-                      this.state.hideGridY
-                    }
-                    imgSrc={
-                      this.state.imgSrc
-                    }
-                    disabled={
-                      this.state.disabled
-                    }
+                    brushRadius={this.state.brushRadius}
+                    canvasWidth={this.state.canvasWidth}
+                    canvasHeight={this.state.canvasHeight}
+                    lazyRadius={this.state.lazyRadius}
+                    hideGridX={this.state.hideGridX}
+                    hideGridY={this.state.hideGridY}
+                    imgSrc={this.state.imgSrc}
+                    disabled={this.state.disabled}
                   />
                 </div>
-                </Col>
-                <Col
-                  md={{
-                    span: 4,
-                  }}
-                >
-                <div className="Character">
-                  <img
-                    className="Hiragana"
-                    src={
-                      this.state.currentCharacter.animation
-                    }
-                    width={150}
-                    alt={
-                      this.state.currentCharacter.romaji
-                    }
+              </Col>
+              <Col
+                md={{
+                  span: 5,
+                }}
+              >
+                <div className="character">
+                  <Image
+                    className="hiragana"
+                    src={this.state.currentCharacter.animation}
+                    width={120}
+                    alt={this.state.currentCharacter.romaji}
                   />
-                  <figure>
+                  <figure className="audio">
                     <audio
                       controls
-                      src={
-                        this.state.currentCharacter.pronunciation
-                      }
+                      src={this.state.currentCharacter.pronunciation}
                     >
-                      Your browser does not support the{" "}
-                      <code>
-                        audio
-                      </code>{" "}
-                        element.
-                      </audio>*/}
+                      Your browser does not support the <code>audio</code>{" "}
+                      element.
+                    </audio>
                   </figure>
-                  </div>*/}
-                  </Col>
-                </Row>*/}
-              </Container>
-          
-
-          
-          {/*<div className="Learn">
-            {/*<div className="Floor">*/}
-              {/*<div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          {/*<div>
                 <Badge as="button" pill bg="light" text="warning" onClick={""}>
                   Reset
                 </Badge>
               </div>*/}
-
-              {/*<div className="Fan">*/}
-                {/*<div className="Leaves">*/}
-                  {/*<div className="Table">*/}
-                    {/*<div className="TableSide">*/}
-                      {/*<div className="Splat">*/}
-                        {/*<div className="Brush">
-                          <div className="PaintBlack">
-                            <div className="PaintRed">
-                              <div className="Sousaku">*/}
-                                {/*<div className="Palette">
-                                  <div className="PaletteRed">
-                                    <div className="PaletteBlack">
-                                      <div className="Circle1">
-                                        <div className="Circle2">
-                                          <div className="Circle3">*/}
-                                            {/*<div
-                                              onClick={(e) => this.target(e)}
-                                              className="Line1"
-                                            >
-                                              <div className="Line2">
-                                                <div className="Line3">*/}
-                                                  {/*<div className="Engraving">*/}
-                                                    {/*<Container>*/}
-                                                      {/*<Row>
-                                                        <Col
-                                                          md={{
-                                                            span: 2,
-                                                            offset: 5,
-                                                          }}
-                                                        >
-                                                          <div className="Canvas">
-                                                            <CanvasDraw
-                                                              brushRadius={
-                                                                this.state
-                                                                  .brushRadius
-                                                              }
-                                                              canvasWidth={
-                                                                this.state
-                                                                  .canvasWidth
-                                                              }
-                                                              canvasHeight={
-                                                                this.state
-                                                                  .canvasHeight
-                                                              }
-                                                              lazyRadius={
-                                                                this.state
-                                                                  .lazyRadius
-                                                              }
-                                                              hideGridX={
-                                                                this.state
-                                                                  .hideGridX
-                                                              }
-                                                              hideGridY={
-                                                                this.state
-                                                                  .hideGridY
-                                                              }
-                                                              imgSrc={this.state.imgSrc}
-                                                              disabled={
-                                                                this.state
-                                                                  .disabled
-                                                              }
-                                                            />
-                                                          </div>
-                                                          <div>
-                                                            <Badge
-                                                              as="button"
-                                                              pill
-                                                              bg="light"
-                                                              text="warning"
-                                                              onClick={(e) =>
-                                                                this.changeCharacterBackwards(
-                                                                  e
-                                                                )
-                                                              }
-                                                            >
-                                                              Previous
-                                                            </Badge>
-                                                            <Badge
-                                                              as="button"
-                                                              pill
-                                                              bg="light"
-                                                              text="warning"
-                                                              onClick={(e) =>
-                                                                this.changeCharacterForward(
-                                                                  e
-                                                                )
-                                                              }
-                                                            >
-                                                              Next
-                                                            </Badge>
-                                                          </div>
-                                                        </Col>
-                                                        <Col
-                                                          md={{
-                                                            span: 4,
-                                                          }}
-                                                        >
-                                                          <div className="Character">
-                                                            <img
-                                                              className="Hiragana"
-                                                              src={
-                                                                this.state
-                                                                  .currentCharacter
-                                                                  .animation
-                                                              }
-                                                              width={150}
-                                                              alt={
-                                                                this.state
-                                                                  .currentCharacter
-                                                                  .romaji
-                                                              }
-                                                            />*/}
-                                                            {/*<figure>
-                                                              <audio
-                                                                controls
-                                                                src={
-                                                                  this.state
-                                                                    .currentCharacter
-                                                                    .pronunciation
-                                                                }
-                                                              >*/}
-                                                                {/*Your browser
-                                                                does not support
-                                                                the{" "}
-                                                                <code>
-                                                                  audio
-                                                                </code>{" "}
-                                                                element.
-                                                              </audio>*/}
-                                                            {/*</figure>
-                                                          </div>*/}
-                                                        {/*</Col>
-                                                      </Row>*/}
-                                                   {/* </Container>
-                                                  </div>*/}
-                                               {/* </div>
-                                              </div>*/}
-                                            {/*</div>
-                                          </div>*/}
-                                      {/*  </div>
-                                      </div>*/}
-                                    {/*</div>
-                                  </div>*/}
-                               {/* </div>
-                              </div>*/}
-                           {/* </div>
-                          </div>*/}
-                        {/*</div>
-                      </div>*/}
-                    {/*</div>
-                  </div>*/}
-                {/*</div>*/}
-              {/*</div>*/}
-            {/*</div>*/}
-          {/*</div>*/}
         </div>
+        <div className="letters">
+          <Image src={mobileA} fluid className="mobileA" />
+          <Image src={mobileKa} fluid className="mobileKa" />
+          <Image src={mobileSa} fluid className="mobileSa" />
+          <Image src={mobileTa} fluid className="mobileTa" />
+          <Image src={mobileNa} fluid className="mobileNa" />
+          <Image src={mobileHa} fluid className="mobileHa" />
+          <Image src={mobileMa} fluid className="mobileMa" />
+          <Image src={mobileYa} fluid className="mobileYa" />
+          <Image src={mobileRa} fluid className="mobileRa" />
+          <Image src={mobileWa} fluid className="mobileWa" />
+          <Image src={mobileN} fluid className="mobileN" />
+        </div>
+        <Button onClick={(e) => this.changeCharacterForward(e)}>Hello</Button>
       </>
     );
   }
