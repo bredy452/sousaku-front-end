@@ -60,8 +60,8 @@ let trace = [
   writeYa,
   writeRa,
   writeWa,
-  writeN
-]
+  writeN,
+];
 
 export default class Learn extends Component {
   constructor(props) {
@@ -73,7 +73,7 @@ export default class Learn extends Component {
         romaji: "a",
         id: 1,
         animation: "https://yosida.com/images/kana/a.gif",
-        images: ""
+        images: "",
       },
       nextCharacter: 1,
       hiraganaCharacter: 1,
@@ -96,87 +96,109 @@ export default class Learn extends Component {
   }
 
   changeCharacterForward = (e) => {
-    
     console.log(this.state.hiraganaCharacter);
     e.preventDefault();
     if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 5) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imgSrc: trace[1]
-        
+        imgSrc: trace[1],
       });
     } else if (
       this.state.nextCharacter < 46 &&
       this.state.hiraganaCharacter === 10
     ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[2],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 15) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 15
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[3],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 20) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 20
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[4],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 25) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 25
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[5],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 30) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 30
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[6],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 35) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 35
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[7],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 38) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 38
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[8],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 43) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 43
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[9],
       });
-    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 45) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 45
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
         imgSrc: trace[10],
       });
-    } else if (this.state.nextCharacter < 46 ) {
+    } else if (this.state.nextCharacter < 46) {
       
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
       });
@@ -184,101 +206,118 @@ export default class Learn extends Component {
   };
 
   changeCharacterBackwards = (e) => {
-    console.log(this.state.hiraganaCharacter)
+    console.log(this.state.hiraganaCharacter);
     e.preventDefault();
     if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter <= 1) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[0],
-        imgSrc: trace[0]
-        
+        imgSrc: trace[0],
       });
-    } 
-    else if (
+    } else if (
       this.state.nextCharacter > 0 &&
       this.state.hiraganaCharacter === 6
     ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[5],
         imgSrc: trace[1],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 11) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 11
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[10],
         imgSrc: trace[2],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 16) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 16
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[15],
         imgSrc: trace[3],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 21) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 21
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[20],
         imgSrc: trace[4],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 26) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 26
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[25],
         imgSrc: trace[5],
       });
-    } else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 31) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 31
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[30],
         imgSrc: trace[6],
       });
-    } else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 36) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 36
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[35],
         imgSrc: trace[7],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 39) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 39
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[38],
         imgSrc: trace[8],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 44) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 44
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[43],
         imgSrc: trace[9],
       });
-    } 
-    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 46) {
+    } else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 46
+    ) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[45],
         imgSrc: trace[10],
       });
-    }
-    else if (this.state.nextCharacter > 0) {
+    } else if (this.state.nextCharacter > 0) {
       this.setState({
-        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        hiraganaCharacter: this.state.hiraganaCharacter - 1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[this.state.nextCharacter - 1],
       });
@@ -374,7 +413,7 @@ export default class Learn extends Component {
                 }}
               >
                 <div className="canvas">
-                  <CanvasDraw 
+                  <CanvasDraw className="canvasDraw"
                     brushRadius={this.state.brushRadius}
                     canvasWidth={this.state.canvasWidth}
                     canvasHeight={this.state.canvasHeight}
@@ -427,9 +466,19 @@ export default class Learn extends Component {
           <Image src={mobileN} fluid className="mobileN" />
         </div>
         <div className="prevNextButtons">
-            <Image src={leftArrow} fluid className="leftArrow" onClick={(e) => this.changeCharacterBackwards(e)} />
-            <Image src={middleButton} fluid className="middleButton" />
-            <Image src={rightArrow} fluid className="rightArrow" onClick={(e) => this.changeCharacterForward(e)}/>
+          <Image
+            src={leftArrow}
+            fluid
+            className="leftArrow"
+            onClick={(e) => this.changeCharacterBackwards(e)}
+          />
+          <Image src={middleButton} fluid className="middleButton" />
+          <Image
+            src={rightArrow}
+            fluid
+            className="rightArrow"
+            onClick={(e) => this.changeCharacterForward(e)}
+          />
         </div>
       </>
     );

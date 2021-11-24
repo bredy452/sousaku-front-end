@@ -11,7 +11,7 @@
   width: 579px;
 }*/
 
-@media (min-width:  838px) {
+@media (min-width: 838px) {
 .tableSide {
   width: 378px;
   height: 34px;
@@ -244,6 +244,210 @@ margin-left: 30px;
 }
 
 }
+
+@media (max-width: 1920px) {
+
+.floor {
+  width: 1920px;
+  height: 1020px;
+}
+
+.table {
+  width: 1200px;
+  height: 601px;
+  
+}
+
+.tableSide {
+  width: 900px;
+  height: 100px;
+}
+
+.tableSideDiv {
+  margin-top: -590px;
+}
+
+.brush {
+  width: 152px;
+  height: 60px;
+}
+
+.brushDiv {
+  margin-top: -70px;
+  margin-right: -50px;
+}
+
+.hiraganaBoard {
+  width: 150px;
+  height: 530px;
+}
+
+.hiraganaBoardDiv{
+  margin-top: -450px;
+  margin-left: -1310px;
+}
+
+.fanDiv {
+  margin-top: -800px;
+}
+
+.engraving {
+  width: 799px;
+  height: 450px;
+}
+
+.engravingDiv {
+  margin-top: -7px;
+}
+
+.splat {
+  width: 60px;
+  height: 60px;
+}
+
+.splatDiv {
+  margin-top: -190px;
+  margin-left: -5px;
+}
+
+.paintColors {
+  width: 121px;
+  height: 64px;
+}
+
+.paintColorsDiv {
+  margin-top: -510px;
+  margin-left: 600px;
+}
+
+.paintRight {
+  width: 229px;
+  height: 290px;
+}
+
+.paintRightDiv {
+  margin-top: 140px;
+  margin-right: -1350px;
+}
+
+.brushStrokeDiv {
+  margin-top: -470px;
+  margin-right: -1300px;
+}
+
+.brushStroke {
+  width: 289px;
+  height: 150px;
+}
+
+.canvas {
+  margin-top: -200px;
+  margin-left: -30px;
+}
+
+.letters {
+  width: 200px;
+  height: 300px;
+  margin-top: -500px;
+  margin-left: 5px;
+}
+
+.mobileA {
+  margin-left: 3px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileKa {
+  margin-left: 15px;
+  padding-right: 4px;
+  width: 60px;
+  height: 51px;
+}
+
+
+.mobileSa {
+  margin-left: 3px;
+  margin-top: 20px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileTa {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-right: 4px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileNa {
+  margin-top: 20px;
+  margin-left: 3px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileHa {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-right: 4px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileMa {
+  margin-top: 20px;
+  margin-left: 3px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileYa {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-right: 4px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileRa {
+  margin-top: 20px;
+  margin-left: 3px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileWa {
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 60px;
+  height: 51px;
+}
+
+.mobileN {
+  margin-top: 20px;
+  margin-left: 12px;
+  width: 60px;
+  height: 51px;
+}
+
+.audio {
+  margin-top: 3px;
+}
+
+.fan {
+  width: 522px;
+  height: 392px;
+  margin-left: -400px;
+}
+
+.fanDiv {
+  margin-top: -1030px;
+  margin-left: -590px;
+}
+
+}
 /*.hiragana {
   background-color: #FBF0E0;;
 }*/
@@ -282,16 +486,16 @@ margin-left: 30px;
   height: 145px;
 }*/
 
-@media (min-width: 897px) {
+/*@media (min-width: 897px) {
   .table {
-    /*background: url("../assets/table.png") no-repeat center center;
-  background-size: cover;*/
+    background: url("../assets/table.png") no-repeat center center;
+  background-size: cover;
     width: 1345px;
     height: 746px;
-    /*margin: 0;*/
+    
   }
 }
-
+*/
 /*.Floor {
   background: url("../assets/floor.png") no-repeat center center;
   background-size: cover;

@@ -19,12 +19,12 @@ export default class App extends Component {
     });
   };
 
-  changeBrushSize = () => {
-    this.setState({
-      changeBrush: true,
-      newBrushRadius: 6,
-    });
-  };
+  // changeBrushSize = () => {
+  //   this.setState({
+  //     changeBrush: true,
+  //     newBrushRadius: 6,
+  //   });
+  // };
 
   render() {
     return (
