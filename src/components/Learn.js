@@ -31,20 +31,37 @@ import leaves from "../assets/leaves.png";
 import hiraganaBoard from "../assets/hiraganaBoard.png";
 import scrolls from "../assets/scrolls.png";
 import papers from "../assets/papers.png";
-import mobileA from"../assets/amobileLetters.png";
-import mobileKa from"../assets/kamobileLetters.png";
-import mobileSa from"../assets/samobileLetters.png";
-import mobileTa from"../assets/tamobileLetters.png";
-import mobileNa from"../assets/namobileLetters.png";
-import mobileHa from"../assets/hamobileLetters.png";
-import mobileMa from"../assets/mamobileLetters.png";
-import mobileYa from"../assets/yamobileLetters.png";
-import mobileRa from"../assets/ramobileLetters.png";
-import mobileWa from"../assets/wamobileLetters.png";
-import mobileN from"../assets/nmobileLetters.png";
+import leftArrow from "../assets/leftArrow.png";
+import rightArrow from "../assets/rightArrow.png";
+import middleButton from "../assets/middleButton.png";
+import mobileA from "../assets/amobileLetters.png";
+import mobileKa from "../assets/kamobileLetters.png";
+import mobileSa from "../assets/samobileLetters.png";
+import mobileTa from "../assets/tamobileLetters.png";
+import mobileNa from "../assets/namobileLetters.png";
+import mobileHa from "../assets/hamobileLetters.png";
+import mobileMa from "../assets/mamobileLetters.png";
+import mobileYa from "../assets/yamobileLetters.png";
+import mobileRa from "../assets/ramobileLetters.png";
+import mobileWa from "../assets/wamobileLetters.png";
+import mobileN from "../assets/nmobileLetters.png";
 
 import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button"
+import Button from "react-bootstrap/Button";
+
+let trace = [
+  writeA,
+  writeKa,
+  writeSa,
+  writeTa,
+  writeNa,
+  writeHa,
+  writeMa,
+  writeYa,
+  writeRa,
+  writeWa,
+  writeN
+]
 
 export default class Learn extends Component {
   constructor(props) {
@@ -56,8 +73,10 @@ export default class Learn extends Component {
         romaji: "a",
         id: 1,
         animation: "https://yosida.com/images/kana/a.gif",
+        images: ""
       },
       nextCharacter: 1,
+      hiraganaCharacter: 1,
       // Canvas
       brushRadius: 4,
       canvasWidth: 250,
@@ -65,7 +84,7 @@ export default class Learn extends Component {
       lazyRadius: 0,
       hideGridX: true,
       hideGridY: true,
-      imgSrc: `${writeA}`,
+      imgSrc: trace[0],
       disabled: false,
     };
   }
@@ -77,131 +96,232 @@ export default class Learn extends Component {
   }
 
   changeCharacterForward = (e) => {
-    console.log(this.state.nextCharacter, this.state.imgSrc)
+    
+    console.log(this.state.hiraganaCharacter);
     e.preventDefault();
-    if (this.state.nextCharacter < 45 && this.state.nextCharacter === 1) {
+    if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 5) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
+        nextCharacter: this.state.nextCharacter + 1,
+        currentCharacter: this.state.characters[this.state.nextCharacter],
+        imgSrc: trace[1]
         
-        nextCharacter: this.state.nextCharacter + 1,
-        currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeA}`
       });
-    } else if (this.state.nextCharacter < 45 && this.state.nextCharacter === 6) {
+    } else if (
+      this.state.nextCharacter < 46 &&
+      this.state.hiraganaCharacter === 10
+    ) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeKa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'sa') {
+        imgSrc: trace[2],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 15) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeSa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ta') {
+        imgSrc: trace[3],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 20) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeTa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'na') {
+        imgSrc: trace[4],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 25) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeNa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ha') {
+        imgSrc: trace[5],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 30) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeHa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ma') {
+        imgSrc: trace[6],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 35) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeMa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ya') {
+        imgSrc: trace[7],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 38) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeYa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'ra') {
+        imgSrc: trace[8],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 43) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeRa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'wa') {
+        imgSrc: trace[9],
+      });
+    } else if (this.state.nextCharacter < 46 && this.state.hiraganaCharacter === 45) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeWa}`
-      })
-    } else if (this.state.nextCharacter < 45 && this.state.romaji === 'n') {
+        imgSrc: trace[10],
+      });
+    } else if (this.state.nextCharacter < 46 ) {
+      
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter +1,
         nextCharacter: this.state.nextCharacter + 1,
         currentCharacter: this.state.characters[this.state.nextCharacter],
-        imageSrc:`${writeN}`
-      })
-    } else if (this.state.nextCharacter < 45) {
-      this.setState({
-        nextCharacter: this.state.nextCharacter + 1,
-        currentCharacter: this.state.characters[this.state.nextCharacter]
-      })
+      });
     }
-
-    };
+  };
 
   changeCharacterBackwards = (e) => {
+    console.log(this.state.hiraganaCharacter)
     e.preventDefault();
-    if (this.state.nextCharacter > 0) {
+    if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter <= 1) {
       this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[0],
+        imgSrc: trace[0]
+        
+      });
+    } 
+    else if (
+      this.state.nextCharacter > 0 &&
+      this.state.hiraganaCharacter === 6
+    ) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[5],
+        imgSrc: trace[1],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 11) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[10],
+        imgSrc: trace[2],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 16) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[15],
+        imgSrc: trace[3],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 21) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[20],
+        imgSrc: trace[4],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 26) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[25],
+        imgSrc: trace[5],
+      });
+    } else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 31) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[30],
+        imgSrc: trace[6],
+      });
+    } else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 36) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[35],
+        imgSrc: trace[7],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 39) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[38],
+        imgSrc: trace[8],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 44) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[43],
+        imgSrc: trace[9],
+      });
+    } 
+    else if (this.state.nextCharacter > 0 && this.state.hiraganaCharacter === 46) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
+        nextCharacter: this.state.nextCharacter - 1,
+        currentCharacter: this.state.characters[45],
+        imgSrc: trace[10],
+      });
+    }
+    else if (this.state.nextCharacter > 0) {
+      this.setState({
+        hiraganaCharacter: this.state.hiraganaCharacter -1,
         nextCharacter: this.state.nextCharacter - 1,
         currentCharacter: this.state.characters[this.state.nextCharacter - 1],
       });
     }
   };
 
-  target = (e) => {
-    console.log(e.clientX);
-    if (
-      e.clientX > 1300 &&
-      e.clientX < 1319 &&
-      e.clientY < 231 &&
-      e.clientY > 132
-    ) {
-      this.setState({
-        brushRadius: 6,
-      });
-      // console.log("yes6")
-    } else if (
-      e.clientX > 1340 &&
-      e.clientX < 1355 &&
-      e.clientY < 231 &&
-      e.clientY > 132
-    ) {
-      this.setState({
-        brushRadius: 4,
-      });
-    } else if (
-      e.clientX > 1371 &&
-      e.clientX < 1391 &&
-      e.clientY < 231 &&
-      e.clientY > 132
-    ) {
-      this.setState({
-        brushRadius: 2,
-      });
-    }
-  };
+  // target = (e) => {
+  //   console.log(e.clientX);
+  //   if (
+  //     e.clientX > 1300 &&
+  //     e.clientX < 1319 &&
+  //     e.clientY < 231 &&
+  //     e.clientY > 132
+  //   ) {
+  //     this.setState({
+  //       brushRadius: 6,
+  //     });
+  //     // console.log("yes6")
+  //   } else if (
+  //     e.clientX > 1340 &&
+  //     e.clientX < 1355 &&
+  //     e.clientY < 231 &&
+  //     e.clientY > 132
+  //   ) {
+  //     this.setState({
+  //       brushRadius: 4,
+  //     });
+  //   } else if (
+  //     e.clientX > 1371 &&
+  //     e.clientX < 1391 &&
+  //     e.clientY < 231 &&
+  //     e.clientY > 132
+  //   ) {
+  //     this.setState({
+  //       brushRadius: 2,
+  //     });
+  //   }
+  // };
 
   render() {
     return (
       <>
-        {console.log(this.state.imgSrc)}
+        {console.log(this.state.imgSrc, this.state.images)}
         <div className="App">
           <div>
             <Image src={floor} fluid className="floor" />
@@ -254,7 +374,7 @@ export default class Learn extends Component {
                 }}
               >
                 <div className="canvas">
-                  <CanvasDraw
+                  <CanvasDraw 
                     brushRadius={this.state.brushRadius}
                     canvasWidth={this.state.canvasWidth}
                     canvasHeight={this.state.canvasHeight}
@@ -263,6 +383,7 @@ export default class Learn extends Component {
                     hideGridY={this.state.hideGridY}
                     imgSrc={this.state.imgSrc}
                     disabled={this.state.disabled}
+                    // onClick={(e) => {console.log(e)}}
                   />
                 </div>
               </Col>
@@ -291,11 +412,6 @@ export default class Learn extends Component {
               </Col>
             </Row>
           </Container>
-          {/*<div>
-                <Badge as="button" pill bg="light" text="warning" onClick={""}>
-                  Reset
-                </Badge>
-              </div>*/}
         </div>
         <div className="letters">
           <Image src={mobileA} fluid className="mobileA" />
@@ -310,7 +426,11 @@ export default class Learn extends Component {
           <Image src={mobileWa} fluid className="mobileWa" />
           <Image src={mobileN} fluid className="mobileN" />
         </div>
-        <Button onClick={(e) => this.changeCharacterForward(e)}>Hello</Button>
+        <div className="prevNextButtons">
+            <Image src={leftArrow} fluid className="leftArrow" onClick={(e) => this.changeCharacterBackwards(e)} />
+            <Image src={middleButton} fluid className="middleButton" />
+            <Image src={rightArrow} fluid className="rightArrow" onClick={(e) => this.changeCharacterForward(e)}/>
+        </div>
       </>
     );
   }

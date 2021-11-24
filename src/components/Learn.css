@@ -11,6 +11,7 @@
   width: 579px;
 }*/
 
+@media (min-width:  838px) {
 .tableSide {
   width: 378px;
   height: 34px;
@@ -35,7 +36,7 @@
 }
 
 .engravingDiv {
-  margin-top: -10px;
+  margin-top: -4px;
 }
 
 .paintColors {
@@ -154,7 +155,6 @@
 
 .character {
   margin-right: 35px;
-
 }
 
 .letters {
@@ -223,6 +223,26 @@
 
 .mobileN {
   margin-top: 20px;
+}
+
+.prevNextButtons {
+  width: 200px;
+  margin-top: -30px;
+  margin-left: -7px;
+}
+
+.leftArrow {
+  margin-left: -50px;
+}
+
+.rightArrow {
+  margin-left: 25px;
+}
+
+.middleButton {
+margin-left: 30px;
+}
+
 }
 /*.hiragana {
   background-color: #FBF0E0;;
@@ -418,129 +438,4 @@
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
 }*/
-/* a 5 */
 
-/* NEXT/PREV TOGGLE */
-
-/*position: absolute;
-width: 67px;
-height: 261.27px;
-left: 841px;
-top: 973px;
-
-transform: rotate(-90deg);*/
-
-/* Polygon 10 */
-
-/*position: absolute;
-width: 67px;
-height: 41.06px;
-left: 841px;
-top: 973px;
-
-background: #706D6D;
-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-transform: rotate(-90deg);*/
-
-/* Polygon 9 */
-
-/*position: absolute;
-width: 67px;
-height: 41.06px;
-left: 1102.27px;
-top: 973px;
-
-background: #706D6D;
-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-transform: matrix(0, -1, -1, 0, 0, 0);
-*/
-
-/* Ellipse 9 */
-
-/*position: absolute;
-width: 38.9px;
-height: 38.9px;
-left: 952.5px;
-top: 919.94px;
-
-background: #706D6D;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);*/
-
-/* paint srtrokes unselected */
-
-/*position: absolute;
-width: 289px;
-height: 189.2px;
-left: 1659px;
-top: 478px;
-
-transform: rotate(-90deg);*/
-
-/* Group 6 */
-
-/*position: absolute;
-width: 288.45px;
-height: 101.61px;
-left: 1760.61px;
-top: 189px;
-
-filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.17));
-transform: rotate(89.69deg);*/
-
-/* Lovepik_com-401425366-ancient-ink-brush-strokes 1 */
-
-/*position: absolute;
-width: 288.45px;
-height: 101.61px;
-left: 1760.61px;
-top: 189px;
-
-background: url(.png);
-transform: rotate(89.69deg);*/
-
-/* Group 10 */
-
-/*position: absolute;
-width: 240.63px;
-height: 93.27px;
-left: 1846.89px;
-top: 207.25px;*/
-
-/*filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.17));
-transform: rotate(89.69deg);*/
-
-/* Lovepik_com-401425366-ancient-ink-brush-strokes 1 */
-
-/*position: absolute;
-width: 240.33px;
-height: 37.49px;
-left: 1791.11px;
-top: 207.55px;
-
-background: url(.png);
-transform: rotate(89.69deg);*/
-
-/* Lovepik_com-401425366-ancient-ink-brush-strokes 3 */
-
-/*position: absolute;
-width: 240.33px;
-height: 26.48px;
-left: 1846.89px;
-top: 207.55px;
-
-background: url(.png);
-transform: rotate(89.69deg);
-*/
-
-/* kisspng-ink-brush-japanese-tea-ceremony-budaya-tionghoa-pen-5a8b71dc350856 2 */
-
-/*position: absolute;
-width: 69.79px;
-height: 35.46px;
-left: 430.1px;
-top: 62.21px;
-
-background: url(.png);
-box-shadow: 0px -1.5px 2px rgba(0, 0, 0, 0.36);
-transform: rotate(-14.28deg);
-*/
