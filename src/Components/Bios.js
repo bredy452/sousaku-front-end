@@ -3,8 +3,8 @@ import Image from "react-bootstrap/Image"
 import Carousel from "react-bootstrap/Carousel"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import bredellPhoto from "../assets/bredellPhoto.png"
-import clayPhoto from "../assets/clayPhoto.png"
+import bredellPhoto from "../Assets/bredellPhoto.png"
+import clayPhoto from "../Assets/clayPhoto.png"
 
 export default function Bios (props) {
     return (
