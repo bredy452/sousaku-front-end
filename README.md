@@ -29,10 +29,7 @@
 3. Install dependencies.
 
 `npm install`
-
-4. Enable Git hooks, if they are not already enabled.
-
-`npx husky install`
+giti
 
 ## Getting Started
 
