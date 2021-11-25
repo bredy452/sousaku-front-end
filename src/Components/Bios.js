@@ -5,6 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bredellPhoto from "../Assets/bredellPhoto.png"
 import clayPhoto from "../Assets/clayPhoto.png"
+import email from "../Assets/email.png"
+import linkedin from "../Assets/linkedin.png"
 
 export default function Bios (props) {
     return (
@@ -12,7 +14,7 @@ export default function Bios (props) {
             <Carousel fade variant="dark" controls={false} interval={null} className="bioDiv">
                 <Carousel.Item>
                     <Row>
-                        <Col>
+                        <Col  md={{ span: 1, offset: -1 }}>
                         <Image
                         className="bredellPhoto"
                         src={bredellPhoto}
@@ -21,7 +23,7 @@ export default function Bios (props) {
                         alt="Bredell Evans's Bio"
                         />
                         </Col>
-                    <Col xs={8}>
+                    <Col xs="auto">
                     <Carousel.Caption className="bioInfo">
                         <h2>Bredell Evans J.R.</h2>
                         <h5>Full Stack Software Engineer/Software Developer</h5>
@@ -29,11 +31,17 @@ export default function Bios (props) {
                         </p>
                     </Carousel.Caption>
                     </Col>
+                    <Col className="bioIcons">
+                        <Image src={linkedin}/>
+                        <Image 
+                            src={email}
+                            className="emailIcon"/>
+                    </Col>
                 </Row>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Row>
-                        <Col>    
+                        <Col md={{ span: 1, offset: -1 }}>    
                         <Image
                         className="clayPhoto"
                         src={clayPhoto}
@@ -42,12 +50,18 @@ export default function Bios (props) {
                         alt="Clay Gomes Bio"
                         />
                         </Col>
-                    <Col sm={8}>
+                    <Col xs="auto">
                     <Carousel.Caption className="bioInfo">
                         <h2>Clay Gomes</h2>
                         <h5>Aspiring Product Designer, UI/UX Design Engineer, Storyteller</h5>
                         <p>An aspiring product designer with a focus on UI/UX. He works to<br></br> understand each audience, strives to tell their stories, and curates<br></br> solutions through design</p>
                     </Carousel.Caption>
+                    </Col>
+                    <Col className="bioIcons">
+                        <Image src={linkedin}/>
+                        <Image 
+                            src={email}
+                            className="emailIcon"/>
                     </Col>
                 </Row>
                 </Carousel.Item>

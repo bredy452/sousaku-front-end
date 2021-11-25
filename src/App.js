@@ -9,6 +9,10 @@ import Phone from "./Components/Phone";
 import SignInSignUp from "./Components/SignInSignUp";
 import Bios from "./Components/Bios";
 import Navigation from "./Components/Nav";
+import GlassPalette from "./Components/GlassPalette"
+import MainPhone from "./Components/MainPhone"
+import Sketch from "./Components/Sketch"
+import HandFan from "./Components/HandFan"
 
 export default class App extends Component {
   constructor(props) {
@@ -43,6 +47,10 @@ export default class App extends Component {
             <Akasata />
             <Phone />
             <SignInSignUp />
+            <GlassPalette />
+            <MainPhone />
+            <Sketch />
+            <HandFan />
             <Bios />
           </div>
         )}

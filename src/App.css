@@ -141,14 +141,21 @@
 
 .bioInfo {
   text-align: left;
-  margin-left: 150px;
+  margin-left: 40px;
   font-family: "Courgette", cursive;
+  width: 800px
+ 
 }
 
 .bioDiv {
-  /* width: 1500px; */
-  margin-top: 300px;
+  background-color: #bd4040;
+  margin-top: -100px;
   padding-bottom: 50px;
+}
+
+.bioIcons {
+  margin-left: 200px;
+  margin-top: 90px;
 }
 
 .mainSignUp {
@@ -173,4 +180,25 @@
 .justify-content-end {
   margin-right: 100px;
   padding-top: 50px;
+}
+
+.glassPaletteDiv {
+  margin-top: 200px
+}
+
+.sketchDiv {
+  margin-top: -800px;
+}
+
+.handfanDiv {
+  width: 1522px;
+}
+
+.handfan {
+  margin-right: -210px;
+  margin-top: -180px;
+}
+
+.emailIcon {
+  margin-left: 50px
 }

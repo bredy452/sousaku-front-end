@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import CanvasDraw from "react-canvas-draw";
 import getCharacters from "../getCharacters";
-import Badge from "react-bootstrap/Badge";
 import writeA from "../Assets/writeA.png";
 import writeKa from "../Assets/writeKa.png";
 import writeSa from "../Assets/writeSa.png";

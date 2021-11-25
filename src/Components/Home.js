@@ -9,9 +9,6 @@ import android from "../Assets/android.png"
 import webApp from "../Assets/webApp.png"
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
