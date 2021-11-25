@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "react-bootstrap/image"
+import Image from "react-bootstrap/Image"
 import sketch from "../Assets/sketch.png"
 
 export default function Sketch(props) {
