@@ -12,440 +12,545 @@
 }*/
 
 @media (min-width: 838px) {
-.tableSide {
-  width: 378px;
-  height: 34px;
-}
-
-.tableSideDiv {
-  margin-top: -315px;
-}
-
-.table {
-  width: 579px;
-  height: 322px;
-}
-
-.tableDiv {
-  margin-top: -280px;
-}
-
-.engraving {
-  width: 380px;
-  height: 250px;
-}
-
-.engravingDiv {
-  margin-top: -4px;
-}
-
-.paintColors {
-  width: 40px;
-  height: 35px;
-}
-
-.paintColorsDiv {
-  margin-top: -275px;
-  margin-left: 280px;
-}
-
-.brush {
-  width: 70px;
-  height: 22px;
-}
-
-.brushDiv {
-  margin-top: -35px;
-  margin-left: 110px;
-  transform: rotate(-5.28deg);
-}
-
-.paintRight {
-  width: 104px;
-  height: 133px;
-}
-
-.paintRightDiv {
-  margin-top: 140px;
-  margin-right: -650px;
-}
-
-.floor {
-  width: 897px;
-  height: 404px;
-}
-
-.brushStrokeDiv {
-  margin-top: -270px;
-  margin-right: -650px;
-}
-
-.brushStroke {
-  width: 156px;
-  height: 102px;
-}
-
-.splat {
-  width: 28px;
-  height: 21px;
-}
-
-.splatDiv {
-  margin-top: -197px;
-  margin-left: 35px;
-}
-
-.fanDiv {
-  margin-top: -240px;
-  margin-left: -590px;
-}
-
-.fan {
-  width: 202px;
-  height: 160px;
-}
-
-.leavesDiv {
-  margin-top: -280px;
-  margin-left: -700px;
-}
-
-.leaves {
-  width: 180px;
-  height: 680px;
-}
-
-.hiraganaBoardDiv {
-  margin-top: -455px;
-  margin-left: -700px;
-}
-
-.hiraganaBoard {
-  width: 93px;
-  height: 320px;
-}
-
-.scrollsDiv {
-  margin-top: -220px;
-  margin-left: -390px;
-}
-
-.scrolls {
-  width: 132px;
-  height: 120px;
-}
-
-.papersDiv {
-  margin-top: -140px;
-  margin-left: 390px;
-}
-
-.drawing {
-  margin-top: -150px;
-}
-
-.canvas {
-  margin-top: -40px;
-  margin-left: -30px;
-}
-
-.audio {
-  margin-top: 3px;
-}
-
-.character {
-  margin-right: 35px;
-}
-
-.letters {
-  width: 100px;
-  height: 300px;
-  margin-top: -320px;
-  margin-left: 20px;
-}
-
-.mobileA {
-  margin-left: 3px;
-}
-
-.mobileKa {
-  margin-left: 6px;
-  padding-right: 4px;
-}
-
-.mobileSa {
-  margin-left: 3px;
-  margin-top: 20px;
-  /*padding-right: 4px;*/
-}
-
-.mobileTa {
-  margin-top: 20px;
-  margin-left: 6px;
-  padding-right: 4px;
-}
-
-.mobileNa {
-  margin-top: 20px;
-  margin-left: 3px;
-  /*padding-right: 4px;*/
-}
-
-.mobileHa {
-  margin-top: 20px;
-  margin-left: 6px;
-  padding-right: 4px;
-}
-
-.mobileMa {
-  margin-top: 20px;
-  margin-left: 3px;
-  /*padding-right: 4px;*/
-}
-
-.mobileYa {
-  margin-top: 20px;
-  margin-left: 6px;
-  padding-right: 4px;
-}
-
-.mobileRa {
-  margin-top: 20px;
-  margin-left: 3px;
-  /*padding-right: 4px;*/
-}
-
-.mobileWa {
-  margin-top: 20px;
-  margin-left: 6px;
-  padding-right: 4px;
-}
-
-.mobileN {
-  margin-top: 20px;
-}
-
-.prevNextButtons {
-  width: 200px;
-  margin-top: -30px;
-  margin-left: -7px;
-}
-
-.leftArrow {
-  margin-left: -50px;
-}
-
-.rightArrow {
-  margin-left: 25px;
-}
-
-.middleButton {
-margin-left: 30px;
-}
-
-}
-
-@media (max-width: 1920px) {
-
-.floor {
-  width: 1920px;
-  height: 1020px;
-}
-
-.table {
-  width: 1200px;
-  height: 601px;
-  
-}
-
-.tableSide {
-  width: 900px;
-  height: 100px;
-}
-
-.tableSideDiv {
-  margin-top: -590px;
-}
-
-.brush {
-  width: 152px;
-  height: 60px;
-}
-
-.brushDiv {
-  margin-top: -70px;
-  margin-right: -50px;
-}
-
-.hiraganaBoard {
-  width: 150px;
-  height: 530px;
-}
-
-.hiraganaBoardDiv{
-  margin-top: -450px;
-  margin-left: -1310px;
-}
-
-.fanDiv {
-  margin-top: -800px;
-}
-
-.engraving {
-  width: 799px;
-  height: 450px;
-}
-
-.engravingDiv {
-  margin-top: -7px;
-}
-
-.splat {
-  width: 60px;
-  height: 60px;
-}
-
-.splatDiv {
-  margin-top: -190px;
-  margin-left: -5px;
-}
-
-.paintColors {
-  width: 121px;
-  height: 64px;
-}
-
-.paintColorsDiv {
-  margin-top: -510px;
-  margin-left: 600px;
-}
-
-.paintRight {
-  width: 229px;
-  height: 290px;
-}
-
-.paintRightDiv {
-  margin-top: 140px;
-  margin-right: -1350px;
-}
-
-.brushStrokeDiv {
-  margin-top: -470px;
-  margin-right: -1300px;
-}
-
-.brushStroke {
-  width: 289px;
-  height: 150px;
-}
-
-.canvas {
-  margin-top: -200px;
-  margin-left: -30px;
-}
-
-.letters {
-  width: 200px;
-  height: 300px;
-  margin-top: -500px;
-  margin-left: 5px;
-}
-
-.mobileA {
-  margin-left: 3px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileKa {
-  margin-left: 15px;
-  padding-right: 4px;
-  width: 60px;
-  height: 51px;
-}
-
-
-.mobileSa {
-  margin-left: 3px;
-  margin-top: 20px;
-  width: 60px;
-  height: 51px;
-}
+  .tableSide {
+    width: 378px;
+    height: 34px;
+  }
+
+  .tableSideDiv {
+    margin-top: -315px;
+  }
+
+  .table {
+    width: 579px;
+    height: 322px;
+  }
+
+  .tableDiv {
+    margin-top: -280px;
+  }
+
+  .engraving {
+    width: 380px;
+    height: 250px;
+  }
+
+  .engravingDiv {
+    margin-top: -4px;
+  }
+
+  .paintColors {
+    width: 40px;
+    height: 35px;
+  }
+
+  .paintColorsDiv {
+    margin-top: -275px;
+    margin-left: 280px;
+  }
+
+  .brush {
+    width: 70px;
+    height: 22px;
+  }
+
+  .brushDiv {
+    margin-top: -35px;
+    margin-left: 110px;
+    transform: rotate(-5.28deg);
+  }
+
+  .paintRight {
+    width: 104px;
+    height: 133px;
+  }
+
+  .paintRightDiv {
+    margin-top: 140px;
+    margin-right: -650px;
+  }
+
+  .floor {
+    width: 897px;
+    height: 404px;
+  }
+
+  .brushStrokeDiv {
+    margin-top: -270px;
+    margin-right: -650px;
+  }
+
+  .brushStroke {
+    width: 156px;
+    height: 102px;
+  }
+
+  .splat {
+    width: 28px;
+    height: 21px;
+  }
+
+  .splatDiv {
+    margin-top: -197px;
+    margin-left: 35px;
+  }
+
+  .fanDiv {
+    margin-top: -240px;
+    margin-left: -590px;
+  }
+
+  .fan {
+    width: 202px;
+    height: 160px;
+  }
+
+  .leavesDiv {
+    margin-top: -280px;
+    margin-left: -700px;
+  }
+
+  .leaves {
+    width: 180px;
+    height: 680px;
+  }
+
+  .hiraganaBoardDiv {
+    margin-top: -455px;
+    margin-left: -700px;
+  }
+
+  .hiraganaBoard {
+    width: 93px;
+    height: 320px;
+  }
+
+  .scrollsDiv {
+    margin-top: -220px;
+    margin-left: -390px;
+  }
+
+  .scrolls {
+    width: 132px;
+    height: 120px;
+  }
+
+  .papersDiv {
+    margin-top: -140px;
+    margin-left: 390px;
+  }
+
+  .drawing {
+    margin-top: -150px;
+  }
+
+  .canvas {
+    margin-top: -40px;
+    margin-left: -30px;
+  }
+
+  .audio {
+    margin-top: 3px;
+  }
+
+  .character {
+    margin-right: 27px;
+  }
+
+  .letters {
+    width: 100px;
+    height: 300px;
+    margin-top: -312px;
+    margin-left: 21px;
+  }
+
+  .mobileA {
+    margin-left: 3px;
+  }
+
+  .mobileKa {
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileSa {
+    margin-left: 3px;
+    margin-top: 12px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileTa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileNa {
+    margin-top: 12px;
+    margin-left: 3px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileHa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileMa {
+    margin-top: 12px;
+    margin-left: 3px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileYa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileRa {
+    margin-top: 12px;
+    margin-left: 3px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileWa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileN {
+    margin-top: 10px;
+  }
+
+  .prevNextButtons {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: -7px;
+  }
+
+  .leftArrow {
+    margin-left: -50px;
+  }
+
+  .rightArrow {
+    margin-left: 25px;
+  }
+
+  .middleButton {
+    margin-left: 30px;
+  }
+
+  .boardTopBottomDiv {
+    margin-top: -350px;
+    margin-left: 20px;
+    width: 100px;
+    height: 200px;
+  }
+
+  .boardTop {
+    width: 88px
+  }
+
+  .boardBottom {
+    margin-top: 245px;
+    width: 88px
+  }
+}
+
+@media (min-width: 1080px) {
+
+  .floor {
+    width: 1920px;
+    height: 1020px;
+  }
+
+  .table {
+    width: 1200px;
+    height: 601px;
+  }
+
+  .tableSide {
+    width: 900px;
+    height: 100px;
+  }
+
+  .tableSideDiv {
+    margin-top: -590px;
+  }
+
+  .brush {
+    width: 152px;
+    height: 60px;
+  }
+
+  .brushDiv {
+    margin-top: -70px;
+    margin-right: -50px;
+  }
+
+  .hiraganaBoard {
+    width: 150px;
+    height: 530px;
+  }
+
+  .hiraganaBoardDiv {
+    margin-top: -650px;
+    margin-left: -1310px;
+  }
+
+  .hiragana {
+    width: 130px
+  }
+
+  .fanDiv {
+    margin-top: -800px;
+  }
+
+  .engraving {
+    width: 799px;
+    height: 450px;
+  }
+
+  .engravingDiv {
+    margin-top: -7px;
+  }
+
+  .splat {
+    width: 60px;
+    height: 60px;
+  }
+
+  .splatDiv {
+    margin-top: -190px;
+    margin-left: -5px;
+  }
+
+  .paintColors {
+    width: 121px;
+    height: 64px;
+  }
+
+  .paintColorsDiv {
+    margin-top: -510px;
+    margin-left: 600px;
+  }
+
+  .paintRight {
+    width: 229px;
+    height: 290px;
+  }
+
+  .paintRightDiv {
+    margin-top: 140px;
+    margin-right: -1350px;
+  }
+
+  .brushStrokeDiv {
+    margin-top: -470px;
+    margin-right: -1300px;
+  }
+
+  .brushStroke {
+    width: 289px;
+    height: 150px;
+  }
+
+  .canvas {
+    margin-top: -200px;
+    margin-left: -30px;
+  }
+
+  .letters {
+    width: 200px;
+    height: 300px;
+    margin-top: -540px;
+    margin-left: 13px;
+  }
+
+  .mobileA {
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileKa {
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileSa {
+    margin-left: 3px;
+    margin-top: 20px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileTa {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileNa {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileHa {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileMa {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileYa {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileRa {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileWa {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileN {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .audio {
+    margin: 0 auto;
+    margin-right: 10px;
+  }
+
+  .fan {
+    width: 522px;
+    height: 392px;
+    margin-left: -400px;
+  }
+
+  .fanDiv {
+    margin-top: -1030px;
+    margin-left: -590px;
+  }
+
+  .prevNextButtons {
+    width: 250px;
+    margin-top: 345px;
+    margin-left: 700px;
+  }
+
+  .leftArrow {
+    margin-left: -50px;
+    width: 75px;
+    height: 60px;
+  }
+
+  .rightArrow {
+    margin-left: 25px;
+    width: 75px;
+    height: 60px;
+  }
+
+  .middleButton {
+    margin-left: 30px;
+    width: 75px;
+    height: 60px;
+  }
+
+  .canvas {
+    margin-top: -140px;
+    margin-left: 100px;
+  }
+
+  .papersDiv {
+    margin-top: -250px;
+    margin-left: 690px;
+  }
+
+  .papers {
+    width: 180px;
+    height: 215px;
+
+  }
+
+  .character {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -90px;
+  }
+
+  .scrollsDiv {
+    margin-top: -370px;
+    margin-left: -770px;
+  }
+
+  .scrolls {
+    width: 237px;
+    height: 210px;
+  }
+
+  .drawing {
+    margin-top: -70px;
+  }
+
+  .leavesDiv {
+    margin-top: -200px;
+    margin-left: -1300px;
+  }
+
+  .leaves {
+    width: 180px;
+    height: 780px;
+  }
+
+  .boardTopBottomDiv {
+    margin-top: -370px;
+    margin-left: -12px;
+    width: 250px;
+    height: 200px;
+  }
+
+  .boardTop {
+    width: 135px
+  }
+
+  .boardBottom {
+    margin-top: 420px;
+    width: 135px
+  }
 
-.mobileTa {
-  margin-top: 20px;
-  margin-left: 15px;
-  padding-right: 4px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileNa {
-  margin-top: 20px;
-  margin-left: 3px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileHa {
-  margin-top: 20px;
-  margin-left: 15px;
-  padding-right: 4px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileMa {
-  margin-top: 20px;
-  margin-left: 3px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileYa {
-  margin-top: 20px;
-  margin-left: 15px;
-  padding-right: 4px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileRa {
-  margin-top: 20px;
-  margin-left: 3px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileWa {
-  margin-top: 20px;
-  margin-left: 15px;
-  width: 60px;
-  height: 51px;
-}
-
-.mobileN {
-  margin-top: 20px;
-  margin-left: 12px;
-  width: 60px;
-  height: 51px;
-}
-
-.audio {
-  margin-top: 3px;
-}
-
-.fan {
-  width: 522px;
-  height: 392px;
-  margin-left: -400px;
-}
-
-.fanDiv {
-  margin-top: -1030px;
-  margin-left: -590px;
-}
 
 }
 /*.hiragana {
@@ -642,4 +747,3 @@ margin-left: 30px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
 }*/
-

@@ -1,17 +1,44 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import appStore from "../assets/appStore.png"
+import android from "../assets/android.png"
+import webApp from "../assets/webApp.png"
 
 export default class Home extends Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
-  
+
   render() {
     return (
-      <div>
-        <h1>Sousaku</h1>
-        <p>Learn kana one stroke at a time</p>
-        <button onClick={this.props.toggleIsLearning}>Start Learning</button>
+      <>
+      <div className="homeButtonDiv">
+        <Button onClick={this.props.toggleIsLearning} className="tryForFreeButton">Try for Free</Button>
       </div>
+
+      <Container className="appButtonsDiv">
+      <Row xs="auto">
+          <Col>
+              <Image className="appStoreButton"
+                src={appStore}/>
+          </Col>
+          <Col>
+              <Image className="androidButton"
+                  src={android}
+               />
+          </Col>
+          <Col>
+              <Image className="webAppButton"
+                  src={webApp} 
+              />
+          </Col>
+      </Row>
+  </Container>
+  </>
     );
   }
 }

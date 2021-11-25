@@ -1,8 +1,77 @@
 .App {
   /*display: flex;*/
   flex-direction: column;
-
   height: 100%;
   /* margin-left: 40px;*/
   text-align: center;
+  /* overflow: hidden; */
+}
+
+.logoContainer {
+  display: flex;
+  text-align: left;
+}
+
+.japanesePictureContainer {
+  display: flex;
+  margin-top: -150px;
+  margin-left: 150px;
+  /* width: 2025px; */
+  /* object-fit: scale-down; */
+}
+
+.homeButtonDiv {
+  display: flex;
+  margin-top: -700px;
+  margin-left: 300px;
+}
+
+.tryForFreeButton {
+  background-color: #111b47;
+}
+
+.tryForFreeButton2 {
+  background-color: #111b47;
+  margin-top: -1500px;
+  width: 296px;
+  height: 134px;
+  font-size: xx-large;
+}
+
+.appStoreButton:hover {
+  cursor: pointer;
+}
+
+.androidButton:hover {
+  cursor: pointer;
+}
+
+.webAppButton:hover {
+  cursor: pointer;
+}
+
+.appButtonsDiv {
+  margin-top: 250px;
+  margin-right: 140px;
+}
+
+.introduction {
+  align-items: center;
+  text-align: left;
+}
+
+.akasataAndTextDiv {
+  margin-left: 210px;
+  margin-top: 150px;
+  font-family: "Courgette", cursive;
+}
+
+.phoneDiv {
+  margin-top: 100px;
+  width: 1522px;
+  height: 1039px;
+  background-color: #bd4040;
+}
+.phone {
+  margin-top: 200px;
 }

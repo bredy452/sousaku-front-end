@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 import CanvasDraw from "react-canvas-draw";
 import getCharacters from "../getCharacters";
 import Badge from "react-bootstrap/Badge";
@@ -45,9 +46,13 @@ import mobileYa from "../assets/yamobileLetters.png";
 import mobileRa from "../assets/ramobileLetters.png";
 import mobileWa from "../assets/wamobileLetters.png";
 import mobileN from "../assets/nmobileLetters.png";
+import boardTop from "../assets/boardTop.png";
+import boardBottom from "../assets/boardBottom.png";
 
-import Image from "react-bootstrap/Image";
+
 import Button from "react-bootstrap/Button";
+
+
 
 let trace = [
   writeA,
@@ -78,7 +83,7 @@ export default class Learn extends Component {
       nextCharacter: 1,
       hiraganaCharacter: 1,
       // Canvas
-      brushRadius: 4,
+      brushRadius: 5,
       canvasWidth: 250,
       canvasHeight: 200,
       lazyRadius: 0,
@@ -196,7 +201,6 @@ export default class Learn extends Component {
         imgSrc: trace[10],
       });
     } else if (this.state.nextCharacter < 46) {
-      
       this.setState({
         hiraganaCharacter: this.state.hiraganaCharacter + 1,
         nextCharacter: this.state.nextCharacter + 1,
@@ -413,7 +417,8 @@ export default class Learn extends Component {
                 }}
               >
                 <div className="canvas">
-                  <CanvasDraw className="canvasDraw"
+                  <CanvasDraw ref={(canvasDraw) => {this.canvasDraw = canvasDraw}}
+                    className="canvasDraw"
                     brushRadius={this.state.brushRadius}
                     canvasWidth={this.state.canvasWidth}
                     canvasHeight={this.state.canvasHeight}
@@ -435,7 +440,7 @@ export default class Learn extends Component {
                   <Image
                     className="hiragana"
                     src={this.state.currentCharacter.animation}
-                    width={120}
+                    width={100}
                     alt={this.state.currentCharacter.romaji}
                   />
                   <figure className="audio">
@@ -465,19 +470,36 @@ export default class Learn extends Component {
           <Image src={mobileWa} fluid className="mobileWa" />
           <Image src={mobileN} fluid className="mobileN" />
         </div>
+
+        <div className="boardTopBottomDiv">
+          <Image src={boardTop} fluid className="boardTop" />
+          <Image src={boardBottom} fluid className="boardBottom" />
+        </div>
         <div className="prevNextButtons">
-          <Image
+          <Image 
             src={leftArrow}
             fluid
             className="leftArrow"
-            onClick={(e) => this.changeCharacterBackwards(e)}
+            onClick={(e) => {
+              this.changeCharacterBackwards(e)
+              this.canvasDraw.eraseAll()}}
+
           />
-          <Image src={middleButton} fluid className="middleButton" />
+          <Image 
+            src={middleButton} 
+            fluid 
+            className="middleButton" 
+            onClick={(e) => {
+              this.canvasDraw.clear()
+            }}
+            />
           <Image
             src={rightArrow}
             fluid
             className="rightArrow"
-            onClick={(e) => this.changeCharacterForward(e)}
+            onClick={(e) => {
+              this.changeCharacterForward(e)
+              this.canvasDraw.eraseAll()}}
           />
         </div>
       </>
