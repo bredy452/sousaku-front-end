@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "react-bootstrap/Image"
-import phone from "../assets/phone.png"
+import phone from "../Assets/phone.png"
 import Button from "react-bootstrap/Button"
 
 export default function Phone (props) {

@@ -3,22 +3,19 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import logo from "../assets/logo.png";
+import japanesepicture from "../Assets/picture.png";
 
-export default function Logo (props) {
-
+export default function JapanesePicture (props) {
     return (
-        <>
-        <Container className="logoContainer">
+        <Container className="japanesePictureContainer" >
             <Row>
                 <Col>
                     <Image className="logo"
-                        src={logo} 
-                        width={534.44} 
-                        height={646}/>
+                        src={japanesepicture} 
+                        width={1360} 
+                        height={1614.93}/>
                 </Col>
             </Row>
         </Container>
-        </>
     )
 }

@@ -4,9 +4,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import appStore from "../assets/appStore.png"
-import android from "../assets/android.png"
-import webApp from "../assets/webApp.png"
+import appStore from "../Assets/appStore.png"
+import android from "../Assets/android.png"
+import webApp from "../Assets/webApp.png"
 
 export default class Home extends Component {
   constructor(props) {

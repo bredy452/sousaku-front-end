@@ -5,7 +5,7 @@
 
 /*.Table {
   
-  background: url("../assets/table.png") no-repeat center;
+  background: url("../Assets/table.png") no-repeat center;
   background-size: cover;
   height: 322px;
   width: 579px;
@@ -559,7 +559,7 @@
 
 /*.TableSide {
 
-  background-image: url("../assets/tableSide.png");
+  background-image: url("../Assets/tableSide.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -571,7 +571,7 @@
 */
 
 /*.Engraving {
-  background: url("../assets/engraving.png");
+  background: url("../Assets/engraving.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -582,7 +582,7 @@
 }
 
 .Fan {
-  background-image: url("../assets/fan.png");
+  background-image: url("../Assets/fan.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 50px;
@@ -593,7 +593,7 @@
 
 /*@media (min-width: 897px) {
   .table {
-    background: url("../assets/table.png") no-repeat center center;
+    background: url("../Assets/table.png") no-repeat center center;
   background-size: cover;
     width: 1345px;
     height: 746px;
@@ -602,7 +602,7 @@
 }
 */
 /*.Floor {
-  background: url("../assets/floor.png") no-repeat center center;
+  background: url("../Assets/floor.png") no-repeat center center;
   background-size: cover;
   height: 100%;
   margin: 0;
@@ -611,20 +611,20 @@
 */
 /*.Table {
   
-  background: url("../assets/table.png") no-repeat center center;
+  background: url("../Assets/table.png") no-repeat center center;
   height: 746px;
   width: 1345px;
   margin: 0;
 }*/
 
 /*.Brush {
-  background: no-repeat center/10% url("../assets/brush.png");
+  background: no-repeat center/10% url("../Assets/brush.png");
   padding: 1rem;
   background-position: top 45px right 550px;
 }
 
 .Engraving {
-  background: no-repeat center/50% url("../assets/engraving.png");
+  background: no-repeat center/50% url("../Assets/engraving.png");
   background-size: 40% 80%;
   background-position: top 70px left 430px;
   margin: 0;
@@ -632,7 +632,7 @@
 }
 
 .Fan {
-  background-image: url("../assets/fan.png");
+  background-image: url("../Assets/fan.png");
   background-repeat: no-repeat;
   background-position: bottom 100px left 150px;
   height: 100%;
@@ -640,99 +640,99 @@
 }
 
 .TableSide {
-  background-image: url("../assets/tableSide.png");
+  background-image: url("../Assets/tableSide.png");
   background-repeat: no-repeat;
   background-size: 40% 20%;
   background-position: top 15px left 450px;
 }
 
 .Splat {
-  background-image: url(../assets/splat.png);
+  background-image: url(../Assets/splat.png);
   background-repeat: no-repeat;
   background-size: 7% 20%;
   background-position: top 15px right 650px;
 }
 
 .PaintRed {
-  background-image: url(../assets/paintRed.png);
+  background-image: url(../Assets/paintRed.png);
   background-repeat: no-repeat;
   background-size: 5% 15%;
   background-position: top 25px right 440px;
 }
 
 .PaintBlack {
-  background-image: url(../assets/paintBlack.png);
+  background-image: url(../Assets/paintBlack.png);
   background-repeat: no-repeat;
   background-size: 5% 15%;
   background-position: top 20px right 400px;
 }
 
 .Sousaku {
-  background-image: url(../assets/sousaku.png);
+  background-image: url(../Assets/sousaku.png);
   background-repeat: no-repeat;
   background-size: 7% 10%;
   background-position: bottom 0px right 150px;
 }
 
 .Palette {
-  background-image: url(../assets/palette.png);
+  background-image: url(../Assets/palette.png);
   background-repeat: no-repeat;
   background-size: 6% 40%;
   background-position: bottom 50px right 150px;
 }
 
 .PaletteRed {
-  background-image: url(../assets/paletteRed.png);
+  background-image: url(../Assets/paletteRed.png);
   background-repeat: no-repeat;
   background-size: 3% 12%;
   background-position: bottom 120px right 170px;
 }
 
 .PaletteBlack {
-  background-image: url(../assets/paletteBlack.png);
+  background-image: url(../Assets/paletteBlack.png);
   background-repeat: no-repeat;
   background-size: 3% 12%;
   background-position: bottom 70px right 170px;
 }
 
 .Circle1 {
-  background-image: url(../assets/ellipse.png);
+  background-image: url(../Assets/ellipse.png);
   background-repeat: no-repeat;
   background-position: top 130px right 210px;
 }
 
 .Circle2 {
-  background-image: url(../assets/ellipse.png);
+  background-image: url(../Assets/ellipse.png);
   background-repeat: no-repeat;
   background-position: top 130px right 175px;
 }
 
 .Circle3 {
-  background-image: url(../assets/ellipse.png);
+  background-image: url(../Assets/ellipse.png);
   background-repeat: no-repeat;
   background-position: top 130px right 140px;
 }
 
 .Line1 {
-  background-image: url(../assets/line1.png);
+  background-image: url(../Assets/line1.png);
   background-repeat: no-repeat;
   background-position: top -50px right 220px;
 }
 
 .Line2 {
-  background-image: url(../assets/line2.png);
+  background-image: url(../Assets/line2.png);
   background-repeat: no-repeat;
   background-position: top -50px right 185px;
 }
 
 .Line3 {
-  background-image: url(../assets/line3.png);
+  background-image: url(../Assets/line3.png);
   background-repeat: no-repeat;
   background-position: top -50px right 155px;
 }
 
 .Leaves {
-  background-image: url(../assets/leaves.png);
+  background-image: url(../Assets/leaves.png);
   background-repeat: no-repeat;
   background-position: left;
 }
