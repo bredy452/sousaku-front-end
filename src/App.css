@@ -4,6 +4,13 @@
   height: 100%;
   /* margin-left: 40px;*/
   text-align: center;
+  overflow: hidden;
+}
+
+.App2 {
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
   /* overflow: hidden; */
 }
 
@@ -28,6 +35,7 @@
 
 .tryForFreeButton {
   background-color: #111b47;
+  border-style: none;
 }
 
 .tryForFreeButton2 {
@@ -36,6 +44,7 @@
   width: 296px;
   height: 134px;
   font-size: xx-large;
+  border-style: none;
 }
 
 .appStoreButton:hover {
@@ -74,4 +83,94 @@
 }
 .phone {
   margin-top: 200px;
+}
+
+.signButtons {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-end;
+}
+
+.signIn {
+  width: 200px;
+  height: 80px;
+  margin-right: 100px;
+  background-color: #969191;
+  border-style: none;
+}
+
+.signUp {
+  width: 200px;
+  height: 80px;
+  background-color: #bd3838;
+  border-style: none;
+}
+
+.signUp:hover {
+  background-color: #969191;
+}
+
+.platformsDiv {
+  margin-top: 200px;
+}
+
+.signText {
+  font-family: "Courgette", cursive;
+  margin-left: 285px;
+  margin-top: -260px;
+}
+
+.icons {
+  margin-top: -235px;
+  margin-left: 780px;
+}
+
+.facebookIcon {
+  margin-right: 20px;
+}
+
+.appleIcon {
+  margin-left: 25px;
+  margin-top: -140px;
+}
+
+.googlePlusIcon {
+  margin-left: 230px;
+  margin-right: -20px;
+}
+
+.bioInfo {
+  text-align: left;
+  margin-left: 150px;
+  font-family: "Courgette", cursive;
+}
+
+.bioDiv {
+  /* width: 1500px; */
+  margin-top: 300px;
+  padding-bottom: 50px;
+}
+
+.mainSignUp {
+  background-color: #bd3838;
+  border-style: none;
+}
+
+.mainSignIn {
+  background-color: #969191;
+  border-style: none;
+}
+
+.mainSignIn:hover {
+  background-color: #969191;
+}
+
+.mainSignUp:hover {
+  background-color: #bd3838;
+  border-style: none;
+}
+
+.justify-content-end {
+  margin-right: 100px;
+  padding-top: 50px;
 }
