@@ -1,0 +1,749 @@
+.Learn {
+  height: 100%;
+  margin: 0;
+}
+
+/*.Table {
+  
+  background: url("../Assets/table.png") no-repeat center;
+  background-size: cover;
+  height: 322px;
+  width: 579px;
+}*/
+
+@media (min-width: 838px) {
+  .tableSide {
+    width: 378px;
+    height: 34px;
+  }
+
+  .tableSideDiv {
+    margin-top: -315px;
+  }
+
+  .table {
+    width: 579px;
+    height: 322px;
+  }
+
+  .tableDiv {
+    margin-top: -280px;
+  }
+
+  .engraving {
+    width: 380px;
+    height: 250px;
+  }
+
+  .engravingDiv {
+    margin-top: -4px;
+  }
+
+  .paintColors {
+    width: 40px;
+    height: 35px;
+  }
+
+  .paintColorsDiv {
+    margin-top: -275px;
+    margin-left: 280px;
+  }
+
+  .brush {
+    width: 70px;
+    height: 22px;
+  }
+
+  .brushDiv {
+    margin-top: -35px;
+    margin-left: 110px;
+    transform: rotate(-5.28deg);
+  }
+
+  .paintRight {
+    width: 104px;
+    height: 133px;
+  }
+
+  .paintRightDiv {
+    margin-top: 140px;
+    margin-right: -650px;
+  }
+
+  .floor {
+    width: 897px;
+    height: 404px;
+  }
+
+  .brushStrokeDiv {
+    margin-top: -270px;
+    margin-right: -650px;
+  }
+
+  .brushStroke {
+    width: 156px;
+    height: 102px;
+  }
+
+  .splat {
+    width: 28px;
+    height: 21px;
+  }
+
+  .splatDiv {
+    margin-top: -197px;
+    margin-left: 35px;
+  }
+
+  .fanDiv {
+    margin-top: -240px;
+    margin-left: -590px;
+  }
+
+  .fan {
+    width: 202px;
+    height: 160px;
+  }
+
+  .leavesDiv {
+    margin-top: -280px;
+    margin-left: -700px;
+  }
+
+  .leaves {
+    width: 180px;
+    height: 680px;
+  }
+
+  .hiraganaBoardDiv {
+    margin-top: -455px;
+    margin-left: -700px;
+  }
+
+  .hiraganaBoard {
+    width: 93px;
+    height: 320px;
+  }
+
+  .scrollsDiv {
+    margin-top: -220px;
+    margin-left: -390px;
+  }
+
+  .scrolls {
+    width: 132px;
+    height: 120px;
+  }
+
+  .papersDiv {
+    margin-top: -140px;
+    margin-left: 390px;
+  }
+
+  .drawing {
+    margin-top: -150px;
+  }
+
+  .canvas {
+    margin-top: -40px;
+    margin-left: -30px;
+  }
+
+  .audio {
+    margin-top: 3px;
+  }
+
+  .character {
+    margin-right: 27px;
+  }
+
+  .letters {
+    width: 100px;
+    height: 300px;
+    margin-top: -312px;
+    margin-left: 21px;
+  }
+
+  .mobileA {
+    margin-left: 3px;
+  }
+
+  .mobileKa {
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileSa {
+    margin-left: 3px;
+    margin-top: 12px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileTa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileNa {
+    margin-top: 12px;
+    margin-left: 3px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileHa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileMa {
+    margin-top: 12px;
+    margin-left: 3px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileYa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileRa {
+    margin-top: 12px;
+    margin-left: 3px;
+    /*padding-right: 4px;*/
+  }
+
+  .mobileWa {
+    margin-top: 12px;
+    margin-left: 6px;
+    padding-right: 4px;
+  }
+
+  .mobileN {
+    margin-top: 10px;
+  }
+
+  .prevNextButtons {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: -7px;
+  }
+
+  .leftArrow {
+    margin-left: -50px;
+  }
+
+  .rightArrow {
+    margin-left: 25px;
+  }
+
+  .middleButton {
+    margin-left: 30px;
+  }
+
+  .boardTopBottomDiv {
+    margin-top: -350px;
+    margin-left: 20px;
+    width: 100px;
+    height: 200px;
+  }
+
+  .boardTop {
+    width: 88px
+  }
+
+  .boardBottom {
+    margin-top: 245px;
+    width: 88px
+  }
+}
+
+@media (min-width: 1080px) {
+
+  .floor {
+    width: 1920px;
+    height: 1020px;
+  }
+
+  .table {
+    width: 1200px;
+    height: 601px;
+  }
+
+  .tableSide {
+    width: 900px;
+    height: 100px;
+  }
+
+  .tableSideDiv {
+    margin-top: -590px;
+  }
+
+  .brush {
+    width: 152px;
+    height: 60px;
+  }
+
+  .brushDiv {
+    margin-top: -70px;
+    margin-right: -50px;
+  }
+
+  .hiraganaBoard {
+    width: 150px;
+    height: 530px;
+  }
+
+  .hiraganaBoardDiv {
+    margin-top: -650px;
+    margin-left: -1310px;
+  }
+
+  .hiragana {
+    width: 130px
+  }
+
+  .fanDiv {
+    margin-top: -800px;
+  }
+
+  .engraving {
+    width: 799px;
+    height: 450px;
+  }
+
+  .engravingDiv {
+    margin-top: -7px;
+  }
+
+  .splat {
+    width: 60px;
+    height: 60px;
+  }
+
+  .splatDiv {
+    margin-top: -190px;
+    margin-left: -5px;
+  }
+
+  .paintColors {
+    width: 121px;
+    height: 64px;
+  }
+
+  .paintColorsDiv {
+    margin-top: -510px;
+    margin-left: 600px;
+  }
+
+  .paintRight {
+    width: 229px;
+    height: 290px;
+  }
+
+  .paintRightDiv {
+    margin-top: 140px;
+    margin-right: -1350px;
+  }
+
+  .brushStrokeDiv {
+    margin-top: -470px;
+    margin-right: -1300px;
+  }
+
+  .brushStroke {
+    width: 289px;
+    height: 150px;
+  }
+
+  .canvas {
+    margin-top: -200px;
+    margin-left: -30px;
+  }
+
+  .letters {
+    width: 200px;
+    height: 300px;
+    margin-top: -540px;
+    margin-left: 13px;
+  }
+
+  .mobileA {
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileKa {
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileSa {
+    margin-left: 3px;
+    margin-top: 20px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileTa {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileNa {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileHa {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileMa {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileYa {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 4px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileRa {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileWa {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .mobileN {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 60px;
+    height: 51px;
+  }
+
+  .audio {
+    margin: 0 auto;
+    margin-right: 10px;
+  }
+
+  .fan {
+    width: 522px;
+    height: 392px;
+    margin-left: -400px;
+  }
+
+  .fanDiv {
+    margin-top: -1030px;
+    margin-left: -590px;
+  }
+
+  .prevNextButtons {
+    width: 250px;
+    margin-top: 345px;
+    margin-left: 700px;
+  }
+
+  .leftArrow {
+    margin-left: -50px;
+    width: 75px;
+    height: 60px;
+  }
+
+  .rightArrow {
+    margin-left: 25px;
+    width: 75px;
+    height: 60px;
+  }
+
+  .middleButton {
+    margin-left: 30px;
+    width: 75px;
+    height: 60px;
+  }
+
+  .canvas {
+    margin-top: -140px;
+    margin-left: 100px;
+  }
+
+  .papersDiv {
+    margin-top: -250px;
+    margin-left: 690px;
+  }
+
+  .papers {
+    width: 180px;
+    height: 215px;
+
+  }
+
+  .character {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -90px;
+  }
+
+  .scrollsDiv {
+    margin-top: -370px;
+    margin-left: -770px;
+  }
+
+  .scrolls {
+    width: 237px;
+    height: 210px;
+  }
+
+  .drawing {
+    margin-top: -70px;
+  }
+
+  .leavesDiv {
+    margin-top: -200px;
+    margin-left: -1300px;
+  }
+
+  .leaves {
+    width: 180px;
+    height: 780px;
+  }
+
+  .boardTopBottomDiv {
+    margin-top: -370px;
+    margin-left: -12px;
+    width: 250px;
+    height: 200px;
+  }
+
+  .boardTop {
+    width: 135px
+  }
+
+  .boardBottom {
+    margin-top: 420px;
+    width: 135px
+  }
+
+
+}
+/*.hiragana {
+  background-color: #FBF0E0;;
+}*/
+
+/*.TableSide {
+
+  background-image: url("../Assets/tableSide.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 436px;
+  height: 34px;
+  padding-top: 70px;
+  margin: auto;
+}
+*/
+
+/*.Engraving {
+  background: url("../Assets/engraving.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 417px;
+  height: 250px;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.Fan {
+  background-image: url("../Assets/fan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 50px;
+  background-position: right;
+  width: 131px;
+  height: 145px;
+}*/
+
+/*@media (min-width: 897px) {
+  .table {
+    background: url("../Assets/table.png") no-repeat center center;
+  background-size: cover;
+    width: 1345px;
+    height: 746px;
+    
+  }
+}
+*/
+/*.Floor {
+  background: url("../Assets/floor.png") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+*/
+/*.Table {
+  
+  background: url("../Assets/table.png") no-repeat center center;
+  height: 746px;
+  width: 1345px;
+  margin: 0;
+}*/
+
+/*.Brush {
+  background: no-repeat center/10% url("../Assets/brush.png");
+  padding: 1rem;
+  background-position: top 45px right 550px;
+}
+
+.Engraving {
+  background: no-repeat center/50% url("../Assets/engraving.png");
+  background-size: 40% 80%;
+  background-position: top 70px left 430px;
+  margin: 0;
+  padding: 5rem;
+}
+
+.Fan {
+  background-image: url("../Assets/fan.png");
+  background-repeat: no-repeat;
+  background-position: bottom 100px left 150px;
+  height: 100%;
+  padding: 1rem;
+}
+
+.TableSide {
+  background-image: url("../Assets/tableSide.png");
+  background-repeat: no-repeat;
+  background-size: 40% 20%;
+  background-position: top 15px left 450px;
+}
+
+.Splat {
+  background-image: url(../Assets/splat.png);
+  background-repeat: no-repeat;
+  background-size: 7% 20%;
+  background-position: top 15px right 650px;
+}
+
+.PaintRed {
+  background-image: url(../Assets/paintRed.png);
+  background-repeat: no-repeat;
+  background-size: 5% 15%;
+  background-position: top 25px right 440px;
+}
+
+.PaintBlack {
+  background-image: url(../Assets/paintBlack.png);
+  background-repeat: no-repeat;
+  background-size: 5% 15%;
+  background-position: top 20px right 400px;
+}
+
+.Sousaku {
+  background-image: url(../Assets/sousaku.png);
+  background-repeat: no-repeat;
+  background-size: 7% 10%;
+  background-position: bottom 0px right 150px;
+}
+
+.Palette {
+  background-image: url(../Assets/palette.png);
+  background-repeat: no-repeat;
+  background-size: 6% 40%;
+  background-position: bottom 50px right 150px;
+}
+
+.PaletteRed {
+  background-image: url(../Assets/paletteRed.png);
+  background-repeat: no-repeat;
+  background-size: 3% 12%;
+  background-position: bottom 120px right 170px;
+}
+
+.PaletteBlack {
+  background-image: url(../Assets/paletteBlack.png);
+  background-repeat: no-repeat;
+  background-size: 3% 12%;
+  background-position: bottom 70px right 170px;
+}
+
+.Circle1 {
+  background-image: url(../Assets/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top 130px right 210px;
+}
+
+.Circle2 {
+  background-image: url(../Assets/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top 130px right 175px;
+}
+
+.Circle3 {
+  background-image: url(../Assets/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top 130px right 140px;
+}
+
+.Line1 {
+  background-image: url(../Assets/line1.png);
+  background-repeat: no-repeat;
+  background-position: top -50px right 220px;
+}
+
+.Line2 {
+  background-image: url(../Assets/line2.png);
+  background-repeat: no-repeat;
+  background-position: top -50px right 185px;
+}
+
+.Line3 {
+  background-image: url(../Assets/line3.png);
+  background-repeat: no-repeat;
+  background-position: top -50px right 155px;
+}
+
+.Leaves {
+  background-image: url(../Assets/leaves.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.Canvas {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.Hiragana {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3);
+}*/
