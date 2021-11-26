@@ -1,3 +1,4 @@
+
 .App {
   /*display: flex;*/
   flex-direction: column;
@@ -20,9 +21,9 @@
 }
 
 .japanesePictureContainer {
-  display: flex;
+  /* display: flex; */
   margin-top: -150px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
   /* width: 2025px; */
   /* object-fit: scale-down; */
 }

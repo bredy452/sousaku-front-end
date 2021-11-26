@@ -12,7 +12,7 @@ export default function JapanesePicture (props) {
                 <Col>
                     <Image className="logo"
                         src={japanesepicture} 
-                        width={1360} 
+                        width={1400} 
                         height={1614.93}/>
                 </Col>
             </Row>
