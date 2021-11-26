@@ -46,7 +46,7 @@ export default class App extends Component {
               className="homeButton"
             />
             <Akasata />
-            <Phone />
+            <Phone toggleIsLearning={this.toggleIsLearning} />
             <SignInSignUp />
             <GlassPalette />
             <MainPhone />

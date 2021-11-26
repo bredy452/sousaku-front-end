@@ -8,7 +8,7 @@ export default function Phone (props) {
         <>
         <div className="phoneDiv">
             <Image src={phone} className="phone"/>
-            <Button className="tryForFreeButton2">Try for free</Button>
+            <Button className="tryForFreeButton2" onClick={props.toggleIsLearning}>Try for free</Button>
         </div>
         </>
     )
