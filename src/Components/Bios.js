@@ -67,8 +67,8 @@ export default function Bios (props) {
                             <Image
                                 className="clayPhoto"
                                 src={clayPhoto}
-                                width={355}
-                                height={355}
+                                // width={355}
+                                // height={355}
                                 alt="Clay Gomes Bio"
                             />
                         </Col>
