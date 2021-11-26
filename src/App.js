@@ -13,6 +13,7 @@ import GlassPalette from "./Components/GlassPalette"
 import MainPhone from "./Components/MainPhone"
 import Sketch from "./Components/Sketch"
 import HandFan from "./Components/HandFan"
+import MeetSkilCraft from "./Components/MeetSkilCraft";
 
 export default class App extends Component {
   constructor(props) {
@@ -51,6 +52,7 @@ export default class App extends Component {
             <MainPhone />
             <Sketch />
             <HandFan />
+            <MeetSkilCraft />
             <Bios />
           </div>
         )}

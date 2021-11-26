@@ -72,7 +72,7 @@
 .akasataAndTextDiv {
   margin-left: 210px;
   margin-top: 150px;
-  font-family: "Courgette", cursive;
+  font-family: 'SF UI Display Ultralight';
 }
 
 .phoneDiv {
@@ -141,9 +141,9 @@
 
 .bioInfo {
   text-align: left;
-  margin-left: 40px;
-  font-family: "Courgette", cursive;
-  width: 800px
+  margin-left: 150px;
+  font-family: 'SF UI Display Heavy';
+  width: 600px
  
 }
 
@@ -155,7 +155,12 @@
 
 .bioIcons {
   margin-left: 200px;
-  margin-top: 90px;
+  margin-top: 155px;
+  width: 500px
+}
+
+.claybioIcons {
+  margin-left: 150px;
 }
 
 .mainSignUp {
@@ -200,5 +205,31 @@
 }
 
 .emailIcon {
-  margin-left: 50px
+  
 }
+
+.linkedin {
+  margin-right: 60px
+}
+
+.portfolio {
+  margin-left: 70px
+}
+
+.button {
+  /* margin-top: 10px; */
+  
+}
+
+.meetSkilCraftDiv {
+  margin-bottom: 100px;
+  width: 1522px;
+}
+
+/* .bredellPortfolio {
+  width: 500px;
+}
+
+.clayPhoto {
+  width: 500px;
+} */
