@@ -166,7 +166,10 @@
 
   .mobileA {
     margin-left: 3px;
-    background:#FF2400;
+  }
+
+  .mobileAClick {
+    margin-left: 3px;
     opacity:0.5;
   }
 

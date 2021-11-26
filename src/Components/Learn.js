@@ -457,17 +457,17 @@ export default class Learn extends Component {
           </Container>
         </div>
         <div className="letters">
-          <Image src={mobileA} fluid className="mobileA" />
-          <Image src={mobileKa} fluid className="mobileKa" />
-          <Image src={mobileSa} fluid className="mobileSa" />
-          <Image src={mobileTa} fluid className="mobileTa" />
-          <Image src={mobileNa} fluid className="mobileNa" />
-          <Image src={mobileHa} fluid className="mobileHa" />
-          <Image src={mobileMa} fluid className="mobileMa" />
-          <Image src={mobileYa} fluid className="mobileYa" />
-          <Image src={mobileRa} fluid className="mobileRa" />
-          <Image src={mobileWa} fluid className="mobileWa" />
-          <Image src={mobileN} fluid className="mobileN" />
+          {this.state.currentCharacter.romaji === 'a' ? <Image src={mobileA} fluid className='mobileA' style={{opacity:".5"}} /> :  <Image src={mobileA} fluid className='mobileA'/>}
+          {this.state.currentCharacter.romaji === 'ka' ? <Image src={mobileKa} fluid className="mobileKa" style={{opacity:".5"}} /> : <Image src={mobileKa} fluid className="mobileKa"/>}
+          {this.state.currentCharacter.romaji === 'sa' ? <Image src={mobileSa} fluid className='mobileSa' style={{opacity:".5"}} /> :  <Image src={mobileSa} fluid className='mobileSa'/>}
+          {this.state.currentCharacter.romaji === 'ta' ? <Image src={mobileTa} fluid className="mobileTa" style={{opacity:".5"}} /> : <Image src={mobileTa} fluid className="mobileTa"/>}
+          {this.state.currentCharacter.romaji === 'na' ? <Image src={mobileNa} fluid className='mobileNa' style={{opacity:".5"}} /> :  <Image src={mobileNa} fluid className='mobileNa'/>}
+          {this.state.currentCharacter.romaji === 'ha' ? <Image src={mobileHa} fluid className="mobileHa" style={{opacity:".5"}} /> : <Image src={mobileHa} fluid className="mobileHa"/>}
+          {this.state.currentCharacter.romaji === 'ma' ? <Image src={mobileMa} fluid className='mobileMa' style={{opacity:".5"}} /> :  <Image src={mobileMa} fluid className='mobileMa'/>}
+          {this.state.currentCharacter.romaji === 'ya' ? <Image src={mobileYa} fluid className="mobileYa" style={{opacity:".5"}} /> : <Image src={mobileYa} fluid className="mobileYa"/>}      
+          {this.state.currentCharacter.romaji === 'ra' ? <Image src={mobileRa} fluid className="mobileRa" style={{opacity:".5"}} /> : <Image src={mobileRa} fluid className="mobileRa"/>}
+          {this.state.currentCharacter.romaji === 'wa' ? <Image src={mobileWa} fluid className='mobileWa' style={{opacity:".5"}} /> :  <Image src={mobileWa} fluid className='mobileWa'/>}
+          {this.state.currentCharacter.romaji === 'n' ? <Image src={mobileN} fluid className="mobileN" style={{opacity:".5"}} /> : <Image src={mobileN} fluid className="mobileN"/>}
         </div>
 
         <div className="boardTopBottomDiv">
