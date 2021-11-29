@@ -90,6 +90,7 @@ export default class Learn extends Component {
       hideGridY: true,
       imgSrc: trace[0],
       disabled: false,
+      brushColor: "#000000"
     };
   }
 
@@ -97,6 +98,18 @@ export default class Learn extends Component {
     this.setState({
       currentCharacter: this.state.characters[0],
     });
+  }
+
+  changeColors = (e) => {
+    if (this.state.brushColor === "#000000") {
+      this.setState({
+        brushColor: "#FF0000"
+      })
+    } else {
+        this.setState({
+          brushColor: "#000000"
+        })
+      }
   }
 
   changeCharacterForward = (e) => {
@@ -386,8 +399,11 @@ export default class Learn extends Component {
           <div className="brushDiv">
             <Image src={brush} fluid className="brush" />
           </div>
-          <div fluid className="paintRightDiv">
-            <Image src={paintRight} fluid className="paintRight" />
+          <div fluid className="paintRightDiv" >
+            <img src={paintRight} fluid className="paintRight" alt="" onClick={(e) => {this.changeColors(e)}}/>
+            {/* <map name="chooseColors">
+              <area shape="rect" coords="1350, 354, 1416, 516" alt="" onClick={(e) => {console.log("hello")}}></area>
+            </map> */}
           </div>
           <div fluid className="brushStrokeDiv">
             <Image src={brushStroke} fluid className="brushStoke" />
@@ -426,6 +442,7 @@ export default class Learn extends Component {
                     hideGridY={this.state.hideGridY}
                     imgSrc={this.state.imgSrc}
                     disabled={this.state.disabled}
+                    brushColor={this.state.brushColor}
                     // onClick={(e) => {console.log(e)}}
                   />
                 </div>

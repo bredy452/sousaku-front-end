@@ -28,6 +28,7 @@
 
   .tableDiv {
     margin-top: -280px;
+    
   }
 
   .engraving {
@@ -304,6 +305,7 @@
   .hiraganaBoardDiv {
     margin-top: -650px;
     margin-left: -1310px;
+    z-index: 1;
   }
 
   .hiragana {
@@ -312,15 +314,18 @@
 
   .fanDiv {
     margin-top: -800px;
+    z-index: 1;
   }
 
   .engraving {
     width: 799px;
     height: 450px;
+    
   }
 
   .engravingDiv {
     margin-top: -7px;
+    z-index: 1;
   }
 
   .splat {
@@ -346,11 +351,17 @@
   .paintRight {
     width: 229px;
     height: 290px;
+    z-index: 2
+  }
+
+  .paintRight:hover {
+    cursor: pointer;
   }
 
   .paintRightDiv {
     margin-top: 140px;
     margin-right: -1350px;
+    z-index: 1
   }
 
   .brushStrokeDiv {
@@ -468,6 +479,7 @@
   .fanDiv {
     margin-top: -1030px;
     margin-left: -590px;
+    z-index: 1;
   }
 
   .prevNextButtons {
@@ -482,16 +494,28 @@
     height: 60px;
   }
 
+  .leftArrow:hover{
+    cursor: pointer;
+  }
+
   .rightArrow {
     margin-left: 25px;
     width: 75px;
     height: 60px;
   }
 
+  .rightArrow:hover {
+    cursor: pointer;
+  }
+
   .middleButton {
     margin-left: 30px;
     width: 75px;
     height: 60px;
+  }
+
+  .middleButton:hover {
+    cursor: pointer;
   }
 
   .canvas {
@@ -502,6 +526,7 @@
   .papersDiv {
     margin-top: -250px;
     margin-left: 690px;
+    z-index: 1;
   }
 
   .papers {
@@ -533,11 +558,13 @@
   .leavesDiv {
     margin-top: -200px;
     margin-left: -1300px;
+    z-index: 1;
   }
 
   .leaves {
     width: 180px;
     height: 780px;
+    z-index: 1;
   }
 
   .boardTopBottomDiv {
@@ -554,6 +581,18 @@
   .boardBottom {
     margin-top: 420px;
     width: 135px
+  }
+  
+  .drawing {
+    z-index: 1;
+  }
+
+  .tableDiv {
+    z-index: 1;
+  }
+
+  #chooseColors {
+    z-index: 2;
   }
 
 
@@ -731,3 +770,6 @@
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
 }*/
+
+
+/* @media only screen and (min-width: 384px) and (max-width: 767px){} */
