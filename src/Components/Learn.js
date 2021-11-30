@@ -82,7 +82,7 @@ export default class Learn extends Component {
       nextCharacter: 1,
       hiraganaCharacter: 1,
       // Canvas
-      brushRadius: 5,
+      brushRadius: 2,
       canvasWidth: 250,
       canvasHeight: 200,
       lazyRadius: 0,
@@ -340,6 +340,28 @@ export default class Learn extends Component {
     }
   };
 
+  bigStroke = (e) => {
+    this.setState({
+      brushRadius: 6
+    })
+  }
+
+  middleStroke = (e) => {
+    this.setState({
+      brushRadius: 4
+    })
+  }
+
+  smallStroke = (e) => {
+    this.setState({
+      brushRadius: 2
+    })
+  }
+
+  clickChange = (e) => {
+    
+  }
+
   // target = (e) => {
   //   console.log(e.clientX);
   //   if (
@@ -376,7 +398,7 @@ export default class Learn extends Component {
   render() {
     return (
       <>
-        {console.log(this.state.imgSrc, this.state.images)}
+        {/* {console.log(this.state.imgSrc, this.state.images)} */}
         <div className="App">
           <div>
             <Image src={floor} fluid className="floor" />
@@ -405,8 +427,12 @@ export default class Learn extends Component {
               <area shape="rect" coords="1350, 354, 1416, 516" alt="" onClick={(e) => {console.log("hello")}}></area>
             </map> */}
           </div>
+          
           <div fluid className="brushStrokeDiv">
             <Image src={brushStroke} fluid className="brushStoke" />
+            <div className="bigStroke" onClick={(e) => {this.bigStroke(e)}}></div>
+            <div className="middleStroke" onClick={(e) => {this.middleStroke(e)}} ></div>
+            <div className="smallStroke" onClick={(e) => {this.smallStroke(e)}} ></div>
           </div>
           <div className="splatDiv">
             <Image src={splat} fluid className="splat" />
@@ -447,7 +473,7 @@ export default class Learn extends Component {
                   />
                 </div>
               </Col>
-              <Col
+              <Col className="column"
                 md={{
                   span: 5,
                 }}
@@ -475,7 +501,7 @@ export default class Learn extends Component {
         </div>
         <div className="letters">
           {this.state.currentCharacter.romaji === 'a' ? <Image src={mobileA} fluid className='mobileA' style={{opacity:".5"}} /> :  <Image src={mobileA} fluid className='mobileA'/>}
-          {this.state.currentCharacter.romaji === 'ka' ? <Image src={mobileKa} fluid className="mobileKa" style={{opacity:".5"}} /> : <Image src={mobileKa} fluid className="mobileKa"/>}
+          {this.state.currentCharacter.romaji === 'ka' ? <Image  src={mobileKa} fluid className="mobileKa" style={{opacity:".5"}} onClick={(e) => {this.clickChange(e)}} /> : <Image src={mobileKa} fluid className="mobileKa" onClick={(e) => {this.clickChange(e)}}/>}
           {this.state.currentCharacter.romaji === 'sa' ? <Image src={mobileSa} fluid className='mobileSa' style={{opacity:".5"}} /> :  <Image src={mobileSa} fluid className='mobileSa'/>}
           {this.state.currentCharacter.romaji === 'ta' ? <Image src={mobileTa} fluid className="mobileTa" style={{opacity:".5"}} /> : <Image src={mobileTa} fluid className="mobileTa"/>}
           {this.state.currentCharacter.romaji === 'na' ? <Image src={mobileNa} fluid className='mobileNa' style={{opacity:".5"}} /> :  <Image src={mobileNa} fluid className='mobileNa'/>}
