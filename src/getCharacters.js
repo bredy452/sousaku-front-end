@@ -1,8 +1,8 @@
 const getCharacters = () => {
   let baseUrl = "https://yosida.com/images/kana/";
-  let baseUrl2 = "https://drmoku.com/content/uploads/2018/06/";
+  let baseUrl2 = "https://guidetojapanese.org/audio/"                                   //"https://drmoku.com/content/uploads/2018/06/";
   let fileExt = ".gif";
-  let fileExt2 = ".mp3?_=29";
+  let fileExt2 = ".mp3"                                                                           //".mp3?_=29";
   let allRomaji = [
     "a",
     "i",
